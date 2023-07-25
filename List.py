@@ -27,9 +27,23 @@ for summ in x:
     nums += summ
 
 print(f"합계 : {nums}")
+b=0
 
+for idx in range(len(x)):
+    b += x[idx]
+
+print(f"합계 : {a}")
 
 # 평균
 print(f"평균 : {int(nums/n)}")
+
+c=0
+
+for idx in range(len(x)):
+    b += x[idx]
+    c += 1
+
+print(f"평균 : {c}")
+
 
 
