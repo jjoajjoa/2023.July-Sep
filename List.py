@@ -13,7 +13,8 @@ print(n)
 
 print(f"갯수 : {len(x)}")
 print(f"최소값 : {x[0]}")
-# print(f"최대값 : {x[n]}")
+print(f"최대값 : ")
+
 
 
 
