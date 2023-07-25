@@ -6,5 +6,4 @@ for i in range(len(x)):
             temp = x[i]
             x[i] = x[j]
             x[j] = temp
-
 print(x)
