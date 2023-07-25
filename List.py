@@ -23,7 +23,7 @@ print(f"최대값 : {x[a]}")
 b=0
 
 for idx in range(len(x)):
-    a += x[idx]
+    b += x[idx]
 
 print(f"합계 : {a}")
 
@@ -32,7 +32,7 @@ print(f"합계 : {a}")
 c=0
 
 for idx in range(len(x)):
-    a += x[idx]
+    b += x[idx]
     c += 1
 
 print(f"평균 : {c}")
