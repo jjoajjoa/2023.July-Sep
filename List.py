@@ -20,8 +20,22 @@ print(f"최대값 : {x[a]}")
 
 
 # 합계
+b=0
 
+for idx in range(len(x)):
+    a += x[idx]
+
+print(f"합계 : {a}")
 
 # 평균
+
+c=0
+
+for idx in range(len(x)):
+    a += x[idx]
+    c += 1
+
+print(f"평균 : {c}")
+
 
 
