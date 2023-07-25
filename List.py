@@ -8,12 +8,12 @@ for i in range(len(x)):
             x[j] = temp
 
 
-n = len(x)  
-print(n)
+n = int(len(x))
+a = n-1
 
 print(f"갯수 : {len(x)}")
 print(f"최소값 : {x[0]}")
-print(f"최대값 : ")
+print(f"최대값 : {x[a]}")
 
 
 
