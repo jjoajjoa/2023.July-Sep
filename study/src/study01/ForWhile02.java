@@ -1,4 +1,4 @@
-package stucy01;
+package study01;
 
 import java.util.Scanner;
 
@@ -53,9 +53,9 @@ public class ForWhile02 {
 				break;
 			}
 		}	
-				
+*/				
 		
-		// 구구단 -> Scanner, 1입력 홀수단출력, 2입력 짝수단출력		
+/*		// 구구단 -> Scanner, 1입력 홀수단출력, 2입력 짝수단출력		
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("1: 홀수단, 2: 짝수단");
@@ -88,7 +88,7 @@ public class ForWhile02 {
 		// 숫자 5개 최고점, 점수학점 (저번에 한거 응용)
 		// -> 숫자 n개 입력받아서 학점, 각각 몇명인지, M m A 구하기
 		
-		Scanner scan2 = new Scanner(System.in);
+/*		Scanner scan2 = new Scanner(System.in);
 		
 
 		int ni;
@@ -97,14 +97,17 @@ public class ForWhile02 {
 		for (int i=1; i<=10; i++) {
 			
 			System.out.print("점수 입력 : ");
-			ni = scan2.nextInt();
+			ni = scan2.nextInt(); // ni = 입력값 10개
+			
+			// 10번 반복하기
 			if(i==10) {				
-				System.out.println("!!!!!!!!!!!!!!!!!");
+				System.out.println("!!!!!!!!!!!!"); // -> 맨 밑에 프린트됨
 				break;
 			}
 			
+			// 학점계산기 : 점수 밑에 나옴
 			if (ni > 90) {
-				System.out.println("A학점");
+				System.out.println("A학점"); 
 			} else if (ni >= 80) {
 				System.out.println("B학점");
 			} else if (ni >= 70) {
@@ -116,16 +119,55 @@ public class ForWhile02 {
 			} else {
 				System.out.println("과락");
 			}	
+			
 		}
 		
 		
-
+		int A = 0;
+		int B = 0;
+		int C = 0;
+		int D = 0;
+		int F = 0;
+		int max = 0;
+		int min = 0;
 		
+		for(int i=0; i<5; i++) {
+			int score = scan2.nextInt();
+			if (max < score) {
+				max = score;
+			}
+			if (min > score) {
+				min = score;
+			}
+			
+		}
 		
+		for (int i=0; i<5; i++) {
+			int ni = scan2.nextInt();
+		}
 		
+		if (ni > 90) {
+			System.out.println("A학점"); 
+			A++;
+		} else if (ni >= 80) {
+			System.out.println("B학점");
+			B++;
+		} else if (ni >= 70) {
+			System.out.println("C학점");
+			C++;
+		} else if (ni >= 60) {
+			System.out.println("D학점");
+			D++;
+		} else if (ni >= 50) {
+			System.out.println("F학점");
+			F++;
+		} else {
+			System.out.println("과락");
+		}
 		
+		System.out.println(A+B+C+D+E);
 		
-		
+*/		
 		
 	}
 }

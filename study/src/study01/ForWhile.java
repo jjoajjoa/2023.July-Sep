@@ -1,4 +1,4 @@
-package stucy01;
+package study01;
 
 public class ForWhile {
 
