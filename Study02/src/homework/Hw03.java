@@ -38,9 +38,22 @@ public class Hw03 {
 		}
 		
 		
+		System.out.println("-------------순역방향----------------");
+		// 역순방향
+		for(int i=0, k=0; i<5; i++, k+=5) {
+			for(int j=0; j<5; j++) {
+				array[i][j] = k+j+1;
+				System.out.println(array[i][j]);
+			}
+			System.out.println();
+//			if () {
+//				
+//			}
+		}
+		
+
 		
 		
-		System.out.println("-----------------------------");
 
 		
 		
@@ -50,5 +63,17 @@ public class Hw03 {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
 	}
 }
