@@ -15,7 +15,7 @@ public class Hw03_teacher {
 		String[] cardGame = {"거지", "시민", "귀족", "왕"};
 		int score1 = 0;
 		int score2 = 0;
-//		int hr = 0; //히든룰
+		int hr = 0; //히든룰
 		
 		for(int i=0; i<4; i++) {
 			System.out.println("카드 : {1.거지, 2.시민, 3.귀족, 4.왕}");
@@ -34,17 +34,17 @@ public class Hw03_teacher {
 //				score += 4; 
 //				hr = 1;
 				break;
-			}
-			if(player1 > player2) {
+			} else if(player1 > player2) {
 				score1 += 1;
 			} else if (player2 > player1) {
 				score2++;
 			} 
+			
 		}
 		
 		if (score1 > score2) {
 			System.out.println("플레이어 1 승리");
-		} else if (score1 > score2) {
+		} else if (score2 > score1) {
 			System.out.println("플레이어 2 승리");
 		} else {
 			System.out.println("무승부!");
