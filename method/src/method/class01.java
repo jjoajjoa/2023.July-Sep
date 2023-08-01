@@ -14,11 +14,11 @@ public class class01 {
 		//반복문 안에서 사용했었던: for(int i=0) {}
 		//매개변수도 지역변수
 		
-		int a=1;  // 지역변수
-		int b=2;  // 전역변수X <- main함수 안에서 활동하기 때문에		
+		int a=5;  // 지역변수
+		int b=6;  // 전역변수X <- main함수 안에서 활동하기 때문에		
 		
 		System.out.println(function());
-		System.out.println(a+b);
+		System.out.println("메인 안" + a+b);
 		function(a,b);
 	}
 
@@ -28,6 +28,10 @@ public class class01 {
 	}
 	
 	public static void function(int a, int b) {
-		System.out.println(a+b);
+		System.out.println("메인 밖" + a+b);
 	}
 }
+
+
+
+
