@@ -9,30 +9,31 @@ public class Class03 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		for (int i=0; ; i++) {
+		System.out.println("숫자를 입력하세용");
+		
+		int x = 0; // 입력값 누적합용
+		
+		while(true) { //입력한만큼
 			
-		}
-		
-		int x = scan.nextInt();
-		
-		
-		if(x<0) {
-			break;
+			int a = scan.nextInt(); //입력받은값		
 			
-			
-		}
-		
-		
-		
-		
-		
-		
+			if(a<0) { //음수-> 종료
+				System.out.println("종료, 누적합: " + x);
+				break;
+			} else if((10-a) < 0) { //두자리수(10 이상)-> 누적끝 
+				continue;
+			} else if(a>=0) { //a a+a a+a+a a+a+a+a			
+				x += a; 
+				System.out.println("누적합 : " + x);	
+			}
+								
+		} //for문 끝
 		
 		
 
-	}
+	} //메인끝
 
-}
+} //클래스끝
 
 
 
