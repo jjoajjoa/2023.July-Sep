@@ -6,7 +6,8 @@ public class Main_ {
 	public static void main(String[] args) {
 		
 		//생성자
-		Restaurant restaurant = new Restaurant(); //빈괄호 기본생성자 		
+		Restaurant restaurant = new Restaurant(); //빈괄호 기본생성자 
+		
 		F_Korean korean = new F_Korean();
 		F_Japanese jap = new F_Japanese();
 		F_American ame = new F_American();
@@ -42,29 +43,40 @@ public class Main_ {
 		F_Japanese jaMePr = new F_Japanese("일본","아리가또",1,menuJ,priceJ);
 		jaMePr.printJaMePr();
 		
-		System.out.println("---------진짜여기----------");		
+		System.out.println("---------진짜여기----------");			
 		
 		
 		//생성자
-		Cafe cafe = new Cafe(); //나라,상호명
+		Cafe cafe = new Cafe(); //
+		
+		C_Twosome twosome = new C_Twosome("한국","투썸",4,"아메리카노",5000);
+		ArrayList<C_Twosome> twosomeList = new ArrayList<>();
+		twosomeList.add(twosome);
+		System.out.println(twosomeList.get(1));
+		
+		
 
+		
+		
 		//카페
 		
-		ArrayList<C_Twosome> twosomeList = new ArrayList<>();
-		ArrayList<C_Starbugs> starbugsList = new ArrayList<>();
-		
-		starbugsList.add(new C_Starbugs());
-		starbugsList.add(new C_Starbugs());
-		starbugsList.add(new C_Starbugs());
-		
-		starbugsList.get(0); //arr[0]
-		
-		starbugsList.remove(0);
-		
+//		ArrayList<C_Twosome> twosomeList = new ArrayList<>();
+//		
+//		ArrayList<C_Starbugs> starbugsList = new ArrayList<>();
+//		
+//		
+//		starbugsList.add(new C_Starbugs());
+//		starbugsList.add(new C_Starbugs());
+//		starbugsList.add(new C_Starbugs());
+//		
+//		starbugsList.get(0); //arr[0]
+//		
+//		starbugsList.remove(0);
+//		
+		System.out.println("---------지금여기----------");
 
 		
 		
-		System.out.println("---------지금여기----------");
 		
 		
 		

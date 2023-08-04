@@ -1,5 +1,6 @@
 package restaurant;
 public class F_American extends Food{
+	
 	String[] menuA;
 	int[] priceA;
 	
