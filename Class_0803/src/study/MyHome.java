@@ -14,12 +14,14 @@ public class MyHome {
   
 	
 	MyHome(String species) {
-		this.species = "메롱";
+		this.species = species;
 	}
+
 	
-	MyHome(String species, String name) {
-		this.species = "히히";
-		this.name = "야호";	
+	MyHome(String name, int age,String species) {
+		this.name =name;
+		this.age = age;
+		this.species = species;
 	}
 	
 	

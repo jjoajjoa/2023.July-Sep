@@ -3,8 +3,8 @@ package study;
 public class Snail extends MyHome {
 	
 	
-	Snail(String species) {
-		super(species);
+	Snail(String name,int age, String species) {
+		super(name,age, species);
 	}
 	
 	Snail(String name, int age) {
