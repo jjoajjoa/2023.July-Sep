@@ -13,12 +13,25 @@ public class MainClassCard {
 		System.out.println(" ~ 거지의 반란 ~");
 		System.out.println("카드를 선택하세용 // 1.거지, 2.시민, 3.귀족, 4.왕");	
 		
-		//카드선택
-		int a = player.cardScan();
-		player.playerCard(a);		
-		computer.computerCard();		
+//		//카드선택
+//		int pl = player.cardScan();
+//		player.playerCard(pl);		
+//		computer.computerCard();		
 		
 		//게임진행
+		for(int i=0; i<4; i++) {
+			
+			int pl = player.cardScan();
+			player.playerCard(pl);		
+			computer.computerCard();
+			
+			score += Progress.play(pl, computer);
+			if(score > 10 || score < -10) {
+				break;
+			}
+		}		
+		Progress.printRes(score);
+	
 		
 		
 		

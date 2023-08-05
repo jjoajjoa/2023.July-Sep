@@ -15,9 +15,9 @@ public class Player {
 		return cardPlayer;
 	}
 	
-	int playerCard(int a) {	
-		System.out.println(namePlayer + "의 카드: " + a);
-		return a;
+	int playerCard(int pl) {	
+		System.out.println(namePlayer + "의 카드: " + pl);
+		return pl;
 	}
 	
 	
