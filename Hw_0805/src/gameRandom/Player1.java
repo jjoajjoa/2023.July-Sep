@@ -2,8 +2,8 @@ package gameRandom;
 
 public class Player1 extends Dice{
 
-//	String nickName1; //user
-	int money;
+	String nickName1; 
+//	int money;
 	
 	Player1(String nickname1){
 //		super(nickname1);

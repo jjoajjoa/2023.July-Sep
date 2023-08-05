@@ -3,12 +3,10 @@ package gameRandom;
 public class Player2 extends Dice{
 
 	int nickName2 = (int)(Math.random()*3+1);
-	int money;
+//	int money;
 	
 	
-//	if(nickName2==1) {
-//		
-//	}
+
 	
 	
 	
