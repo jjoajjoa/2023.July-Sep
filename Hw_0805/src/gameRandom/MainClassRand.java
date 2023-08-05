@@ -80,9 +80,9 @@ public class MainClassRand {
 	
 	static void mode1(String nickName1, int dice) { //1판
 		
-		System.out.println(nickName1+ "님의 주사위 값: " +dice.diceP1);
-		System.out.println(nickName1+ "님의 주사위 값: " +dice.diceP2);
-		
+//		System.out.println(nickName1+ "님의 주사위 값: " +dice.diceP1);
+//		System.out.println(nickName1+ "님의 주사위 값: " +dice.diceP2);
+//		
 		
 		
 		

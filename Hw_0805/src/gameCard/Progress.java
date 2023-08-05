@@ -1,12 +1,7 @@
 package gameCard;
 
-public class Man {
+public class Progress {
 
-	
-	
-	
-	
-	
 	
 	
 	
