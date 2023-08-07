@@ -24,21 +24,18 @@ public class Main_ {
 		String[] menuK = {"순찌", "김찌", "부찌"};
 		int[] priceK = {5000, 7000, 9000};
 		F_Korean koMePr = new F_Korean("한국","김백반집", 5, menuK, priceK);
-		koMePr.printKoMePr();
-		korean.korSeat();
-		
-		
-		
+		koMePr.printKoMePr();		
+		koreanSeat.korSeat();
+		korean.printFood();
 		System.out.println("----------------------");
-		String[] menuA = {"치즈", "패티", "더블"};
-		int[] priceA = {5000, 7000, 9000};	
-		F_American amMePr = new F_American("미국","햄버거집",3,menuA,priceA);
-		amMePr.printAmMePr();
-		System.out.println("----------------------");
-		String[] menuJ = {"초밥", "라멘", "우동"};
-		int[] priceJ = {5000, 7000, 9000};	
-		F_Japanese jaMePr = new F_Japanese("일본","아리가또",4,menuJ,priceJ);
-		jaMePr.printJaMePr();
+		
+		customer1.customerMem();		
+		if (customer1.getMem() < koreanSeat.seat) {
+			System.out.println(customer1.getName() + "님 예약 가능");
+		} else {
+			System.out.println(customer1.getName() + "님 예약 불가능");
+		}
+			
 		
 		
 		
@@ -48,4 +45,26 @@ public class Main_ {
 
 
 
+//		if(koreanSeat.seat > customer1.member) {
+//			System.out.println(customer1.name + "님 예약가능");
+//		} else {
+//			System.out.println(customer1.name + "님 예약 불가능");
+//		}
+//		
+//		if(koreanSeat.seat > customer2.member) {
+//			System.out.println(customer2.name + "님 예약가능");
+//		} else {
+//			System.out.println(customer2.name + "님 예약 불가능");
+//		}
 
+
+//		System.out.println("----------------------");
+//		String[] menuA = {"치즈", "패티", "더블"};
+//		int[] priceA = {5000, 7000, 9000};	
+//		F_American amMePr = new F_American("미국","햄버거집",3,menuA,priceA);
+//		amMePr.printAmMePr();
+//		System.out.println("----------------------");
+//		String[] menuJ = {"초밥", "라멘", "우동"};
+//		int[] priceJ = {5000, 7000, 9000};	
+//		F_Japanese jaMePr = new F_Japanese("일본","아리가또",4,menuJ,priceJ);
+//		jaMePr.printJaMePr();

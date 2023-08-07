@@ -43,6 +43,12 @@ public class F_Korean extends Food{
 		System.out.println("현재 남은 좌석 수: " + seat);
 	}
 	
+	@Override
+	void printFood() { //완료
+		System.out.println("오늘의 메뉴는 부찌입니당");
+//		System.out.println("국가: " + super.nation + ", 상호명: " + super.name); //국가 : 한국
+	}
+	
 	void printKoMePr() {
 		super.printStar();
 		for(int i=0; i<menuK.length; i++) {

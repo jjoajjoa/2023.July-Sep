@@ -8,7 +8,12 @@ package RPGgame;
 public class MainRPGgame {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Unit unit = new Unit();
+		Character character = new Character();
+		Job job = new Job();
+		Moster monster = new Moster();
+		
 
 	}
 
