@@ -42,8 +42,14 @@ public class MainClassRand {
 			
 		} else if(pvs == 2) { //Player1 vs Computer
 			System.out.println("pvc모드를 선택하셨습니당");
+				
+				
+				
+			
 		} else {
 			System.out.println("다시 선택해주세용");
+			
+			
 		}
 		
 		
