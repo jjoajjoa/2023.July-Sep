@@ -4,6 +4,7 @@ public class Food extends Restaurant{
 	
 //	String nation; <- 이건 Restaurant 클래스에 있음
 	String name;
+	int seat;
 	int point = 0;
 	int count = 0;
 	

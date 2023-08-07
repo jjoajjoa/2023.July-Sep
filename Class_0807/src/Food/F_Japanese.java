@@ -1,11 +1,16 @@
 package Food;
 public class F_Japanese extends Food{
+	int seat;
 	String[] menuJ;
 	int[] priceJ;
 	
 	F_Japanese() {
 		setting();
 	}
+	
+//	F_Jananese (int seat) {
+//		this.seat = seat;
+//	}
 	
 	F_Japanese(String nation, String name, int point) {
 		super(nation, name, point);
@@ -30,7 +35,7 @@ public class F_Japanese extends Food{
 	void printJaMePr() {
 		super.printStar();
 		for(int i=0; i<menuJ.length; i++) {
-			System.out.println("메뉴 : " + menuJ[i] + ", 가격 : " + priceJ[i]);
+			System.out.println("메뉴: " + menuJ[i] + ", 가격: " + priceJ[i]);
 		}
 	}
 	

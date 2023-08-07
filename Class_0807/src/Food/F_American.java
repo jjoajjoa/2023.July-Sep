@@ -1,6 +1,6 @@
 package Food;
 public class F_American extends Food{
-	
+	int seat;
 	String[] menuA;
 	int[] priceA;
 	
@@ -30,7 +30,7 @@ public class F_American extends Food{
 	void printAmMePr() {
 		super.printStar();
 		for(int i=0; i<menuA.length; i++) {
-			System.out.println("메뉴 : " + menuA[i] + ", 가격 : " + priceA[i]);
+			System.out.println("메뉴: " + menuA[i] + ", 가격: " + priceA[i]);
 		}
 	}
 	
