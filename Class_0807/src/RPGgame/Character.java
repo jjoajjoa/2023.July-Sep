@@ -7,11 +7,20 @@ public class Character extends Unit {
 //	private int level;
 //	private int damage;
 	
-	Character(String name, String job, int level, int damage) {
-		super();
+	Character(String name) {
+		
 	}
 	
 	
+	
+	Character(String name, String job, int level, int damage) {
+		super();
+		
+	}
+	
+	void info() {
+		System.out.println(getName()+getLevel()+getDamage());
+	}
 	
 	
 }

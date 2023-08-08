@@ -22,13 +22,27 @@ public class MainRPGgame {
 				
 		//기초세팅
 		Unit unit = new Unit();
-		Character character = new Character(nickName, x, 0, 10);
+		Character character1 = new Character(nickName, x, 0, 10);
+		Character character2 = new Character(nickName, x, 0, 5);
 		Moster monster = new Moster();
 //		Moster monster1 = new Moster("다람쥐", 1000);
 //		Moster monster2 = new Moster("토끼", 800);
 //		
-		System.out.println(character.getDamage());
+		System.out.println(character1.getName());
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }

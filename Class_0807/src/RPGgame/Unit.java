@@ -12,16 +12,40 @@ public class Unit {
 		return name;
 	}
 	
+	void setName(String name) {
+		this.name = name;
+	}
+	
 	int getLevel() {
 		return level;
+	}
+	
+	void setLevel(int level) {
+		this.level = level;
 	}
 	
 	int getHealth() {
 		return health;
 	}
 	
+	void setHealth(int health) {
+		this.health = health;
+	}
+	
 	int getDamage() {
 		return damage;
+	}
+	
+	void setDamage(int damage) {
+		this.damage = damage;
+	}
+	
+	int getExperience() {
+		return experience;
+	}
+	
+	void setExperience(int experience) {
+		this.experience = experience;
 	}
 	
 	void info() {
