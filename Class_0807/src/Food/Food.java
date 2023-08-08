@@ -3,13 +3,17 @@ package Food;
 public class Food extends Restaurant{
 	
 //	String nation; <- 이건 Restaurant 클래스에 있음
-	String name;
-	int seat;
-	int point = 0;
-	int count = 0;
+	private String name;
+	private int seat;
+	private int point = 0;
+	private int count = 0;
 	
 	Food() {
 
+	}
+	
+	Food(int seat) {
+		this.seat = seat;
 	}
 	
 	Food(String nation, String name){
@@ -23,7 +27,22 @@ public class Food extends Restaurant{
 		this.point += point;
 		count++;
 	}
+
+	String getName() {
+		return name;
+	}
 	
+	int getSeat() {
+		return seat;
+	}
+	
+	void setName(String name) {
+		this.name = name;
+	}
+	
+	void setSeat(int seat) {
+		this.seat = seat;
+	}
 	
 	void printFood() { //완료
 		System.out.println("국가: " + this.nation + ", 상호명: " + this.name); //국가 : 한국

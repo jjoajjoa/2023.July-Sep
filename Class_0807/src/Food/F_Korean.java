@@ -13,8 +13,7 @@ public class F_Korean extends Food{
 	}
 	
 	F_Korean(int seat) {
-		this.seat = seat;
-		return;
+		super(seat);//setSeat(seat); //20
 	}
 	
 	F_Korean(String nation, String name, int point) {
@@ -35,18 +34,28 @@ public class F_Korean extends Food{
 		this.priceK = price;
 	}
 	
-	void printKorean() {
-		System.out.println("국가 : " + nation + ", 이름 : " + name + ", 평점 : 0"); //국가 : 456, 이름 : 789
-	}
-	
 	void korSeat() {
-		System.out.println("현재 남은 좌석 수: " + seat);
+		System.out.println("현재 남은 좌석 수: " + getSeat());
 	}
 	
+	
+	void korCome(Customer customer, F_Korean kSeat) { 
+		if (customer.getMember() <= kSeat.getSeat()) {
+			System.out.println(customer.getName() + "님 예약 가능");
+			int X = kSeat.getSeat() - customer.getMember();
+			kSeat.setSeat(X);
+			System.out.println("남은 좌석 수: " + kSeat.getSeat());
+		} else {
+			System.out.println(customer.getName() + "님 예약 불가능");
+		}
+	}
+	
+	
+	
+
 	@Override
-	void printFood() { //완료
-		System.out.println("오늘의 메뉴는 부찌입니당");
-//		System.out.println("국가: " + super.nation + ", 상호명: " + super.name); //국가 : 한국
+	void printFood() { 
+		System.out.println("오늘의 메뉴는 " + "순찌" + " 입니당");
 	}
 	
 	void printKoMePr() {
@@ -65,12 +74,5 @@ public class F_Korean extends Food{
 			priceK[i] = 0;
 		}
 	}
-	
-//	void printRes() {
-//		super.printRes();
-//		for(int i=0; i<menuK.length; i++) {
-//			System.out.println("메뉴 : " + menuK[i] + ", 가격 : " + priceK[i]);
-//		}
-//	}
 
 }

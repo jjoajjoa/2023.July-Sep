@@ -19,11 +19,12 @@ public class Customer {
 		System.out.println(name + "님의 예약손님: " + member + "명");
 	}
 	
+	
 	String getName() {
 		return name;
 	}
 	
-	int getMem() {
+	int getMember() {
 		return member;
 	}
 	
@@ -31,7 +32,7 @@ public class Customer {
 		this.name = name;
 	}
 	
-	void setMem(int member) {
+	void setMember(int member) {
 		this.member = member;
 	}
 
