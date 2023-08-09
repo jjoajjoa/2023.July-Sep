@@ -18,19 +18,24 @@ public class MainRPGgame {
 		String x = jobJOB.getJob();
 		System.out.println("---- " + x + " " + nickName + "님의 모험을 시작합니다 ----");
 		System.out.println();
-/////////////////////////////////////////////////////////////////////////////////////////		
+		/////////////////////////////////////////////////////////////////////////////////////////		
 				
 		//기초세팅
-		Unit unit = new Unit();
-		Character character1 = new Character(nickName, x, 0, 10);
-		Character character2 = new Character(nickName, x, 0, 5);
-		Moster monster = new Moster();
-//		Moster monster1 = new Moster("다람쥐", 1000);
-//		Moster monster2 = new Moster("토끼", 800);
-//		
-		System.out.println(character1.getName());
-
+//		Unit unitChar = new Unit(nickName, 5000, 10);		
+//		Unit unitMon1 = new Unit("다람쥐", 1000, 10);
+//		Unit unitMon2 = new Unit("토끼", 500, 5);
 		
+		Character character1 = new Character(nickName, 5000, 100, 0);
+		Moster monster1 = new Moster("다람쥐", 1000, 50);
+		Moster monster2 = new Moster("토깽이", 500, 10);
+		
+//		System.out.println(unitChar.getName());
+//		System.out.println(unitMon1.getName());
+//		System.out.println(unitMon2.getName());
+
+		character1.infoChar();
+		monster1.InfoMon();
+		monster2.InfoMon();
 		
 		
 		

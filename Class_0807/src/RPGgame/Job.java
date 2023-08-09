@@ -1,7 +1,7 @@
 package RPGgame;
 import java.util.Scanner;
 //직업 - 직업이름 직업별스킬
-public class Job {
+public class Job extends Character{
 	Scanner scan = new Scanner(System.in);
 	
 	private String job;

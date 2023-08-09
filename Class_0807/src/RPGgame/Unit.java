@@ -8,6 +8,16 @@ public class Unit {
 	private int damage; //공격력
 	private int experience;
 	
+	Unit() {
+		
+	}
+	
+	Unit (String name, int health, int damage) {
+		this.name = name;
+		this.health = health;
+		this.damage = damage;
+	}
+	
 	String getName() {
 		return name;
 	}
@@ -48,12 +58,9 @@ public class Unit {
 		this.experience = experience;
 	}
 	
-	void info() {
-		
-	}
-	
 	void attack() {
 		
 	}
+	
 	
 }
