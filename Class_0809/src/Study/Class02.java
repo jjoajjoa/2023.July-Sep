@@ -2,18 +2,18 @@ package Study;
 
 public class Class02 {
 
-	public static void main(String[] args) {
-		Constants cons = new Constants();
-		System.out.println(cons.num);
-		cons.num = 10;
-	}
+//	public static void main(String[] args) {
+//		Constants cons = new Constants();
+//		System.out.println(cons.num);
+//		cons.num = 10;
+//	}
 
 }
 
 
-class Constants() {
-	final int  num = 1;
-}
+//class Constants() {
+//	final int  num = 1;
+//}
 
 
 
