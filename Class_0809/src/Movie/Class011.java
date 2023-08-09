@@ -15,10 +15,17 @@ public class Class011 {
 		movie.displayGenre();
 		
 		sfMovie.movieInfo();
-		sfMovie.displayGenre();
+//		sfMovie.displayGenre();
+		System.out.println(Movie.movieSF);
 		
 		romance.movieInfo();
-		romance.displayGenre();
+//		romance.displayGenre();
+		System.out.println(Movie.movieRom);
+		
+		////////////////////////////////////////
+
+		
+		
 		
 	}
 }

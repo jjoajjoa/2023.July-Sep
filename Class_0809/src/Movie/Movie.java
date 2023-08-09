@@ -6,6 +6,10 @@ public class Movie {
 	String title;
 	int time;
 	
+	static final String movieRom = "장르: 로맨스";
+	static final String movieSF = "장르: SF영화";
+	
+	
 	Movie(String title, int time) {
 		this.title = title;
 		this.time = time;
