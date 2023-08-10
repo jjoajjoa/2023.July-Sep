@@ -22,7 +22,7 @@ public class MainArea {
 		rac2.printArea();
 		
 		System.out.println(circle.toString());
-		
+		System.out.println(tri2.toString());
 
 		
 		

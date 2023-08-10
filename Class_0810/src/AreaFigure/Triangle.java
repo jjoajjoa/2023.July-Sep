@@ -17,4 +17,9 @@ public class Triangle extends Shape{
 		System.out.println(super.getName() + "의 넓이: " + triangleArea);
 	}
 	
+	@Override
+	public String toString() {
+		return super.toString() + "넓이는 " + ((super.getSegment1() * super.getSegment2())/2) + " 입니당";
+	}
+	
 }
