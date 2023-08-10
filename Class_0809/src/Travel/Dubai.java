@@ -1,45 +1,70 @@
 package Travel;
 
-public class Dubai extends Contry {
-
+public class Dubai extends TransferX {
+// 추천계절 11~3월
 	static final double flightTimeD = 570; //비행시간(m)
 	static final double timeDiffD = -300; //시차(m)
 	static final double exchangeD = 357.4; //환율
 	
-//	Dubai() {
-//		nation = "United Arab Emirates";
-//	}
+	private String nation;
+	private String language;
 	
-	void arrivalTimeDubai() { 
-		System.out.print(" * 출발hour을 입력해주세용!! (24시간 기준) : ");
-		double departureH = scan.nextInt();
-		System.out.print(" * 출발minute을 입력해주세용!! (24시간 기준) : ");
-		double departureM = scan.nextInt();
-		//도착시간 계산기(한국시간)
-		double arrivalMinute = (departureH*60)+departureM;
-		double arrivalTime = (arrivalMinute+flightTimeD)/60;
-		arrivalTime = Math.round(arrivalTime*100)/100.0;
-		
-		// 질문
-		String arrivalTimeString = Double.toString(arrivalTime);
-		String[] arrivalTimeSplited = arrivalTimeString.split(".",2);
-		
-		System.out.println(arrivalTimeSplited[0]); // 도착시간 실수
-		
+	Dubai(String nation, String language) {
+	this.nation = nation;
+	this.language = language;
+	}
+	
+	
+	
+	@Override
+	public void travelCourse() {
 		
 	}
+	
+	@Override
+	public void activityRecom() {
+	
+	}
+	
+	@Override
+	public void famousFood() {
+	
+	}
+	
+	@Override
+	public void oneLineReview() {
+	
+	}
+	
+	@Override
+	public String toString () {
+		return this.getNation() + " dubai에서는 " + this.getLanguage() + "을 사용합니당!";
+	}
+
+	
+//	void arrivalTimeDubai() { //도착시간 계산기
+//		System.out.println(" * 도착시간 계산기 *");
+//		System.out.print(" * 출발hour을 입력해주세용!! (24시간 기준) : ");
+//		double departureH = scan.nextInt();
+//		System.out.print(" * 출발minute을 입력해주세용!! (24시간 기준) : ");
+//		double departureM = scan.nextInt();
+//		//한국시간 기준
+//		double arrivalMinute = (departureH*60)+departureM;
+//		double arrivalTime = (arrivalMinute+flightTimeD)/60;		
+//		System.out.println(arrivalTime); //확인용
+//		int arrivalH = arrivalTime;
+//		int arrivalM = arrivalTime%60;
+//	}
+		
+		
 
 	
 }
 
+// 질문
+//		arrivalTime = Math.round(arrivalTime*100)/100.0;
+//		String arrivalTimeString = Double.toString(arrivalTime);
+//		String[] arrivalTimeSplited = arrivalTimeString.split(".",2);
+//		System.out.println(arrivalTimeSplited[0] + " " + arrivalTimeSplited[1]); 
 
-//아랍에미리트
-//언어 아랍어 영어
-//이틀 사흘 나흘
-	
-//시차 한국 -5시간
-//직항 9시간30분
-//환율 AED 357.40원
 
-//추천계절 11~3월
-//

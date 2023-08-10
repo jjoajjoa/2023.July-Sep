@@ -1,12 +1,18 @@
 package Travel;
 import java.util.Scanner;
-public class Contry {
+public class Country {
 	Scanner scan = new Scanner(System.in);
 	private String nation;
 	private String language;
-	private String landmark;
 
+	Country() {
+		
+	}
 	
+	Country(String nation, String language) {
+		this.nation = nation;
+		this.language = language;
+	}
 	
 	String getNation() {
 		return nation;
@@ -16,9 +22,11 @@ public class Contry {
 		return language;
 	}
 	
-	String getLandmark() {
-		return landmark;
+	@Override
+	public String toString () {
+		return nation + "에 위치한";
 	}
+	
 	
 	
 	
