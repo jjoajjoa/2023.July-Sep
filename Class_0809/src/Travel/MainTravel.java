@@ -4,8 +4,20 @@ public class MainTravel {
 
 	public static void main(String[] args) {
 		
-		Dubai dubai = new Dubai("United Arab Emirates", "Arabic");
-
+		//처음세팅
+		Contry contry = new Contry();
+		Dubai dubai = new Dubai();
+		
+		
+		
+		contry.intro();
+		
+		System.out.println();
+		
+		dubai.arrivalTimeDubai();
+		
+		
+		
 	}
 
 }
