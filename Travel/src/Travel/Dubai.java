@@ -4,7 +4,7 @@ public class Dubai extends TransferX {
 // 추천계절 11~3월
 	static final double flightTimeD = 570; //비행시간(m)
 	static final int timeDiffD = 5; //시차(h)
-	static final double exchangeD = 357.4; //환율
+	static final double exchangeD = 2.77; //환율
 	
 	Dubai(String nation, String language) {
 		super(nation, language);
@@ -34,7 +34,6 @@ public class Dubai extends TransferX {
 	public String toString () {
 		return super.toString() + " dubai에서는 " + this.getLanguage() + "을 사용합니당!";
 	}
-
 	
 	void arrivalTimeDubai() { //도착시간 계산기
 		System.out.println(" * 도착시간 계산기 *");
@@ -90,7 +89,32 @@ public class Dubai extends TransferX {
 		System.out.println(" * 도착시간 (" + DayD + ")  " + HD + " : " + M + arrivalM + "  (현지기준)");
 	}
 	
-	
+	void exchangeMoneyDubai () {
+		System.out.println(" * 환전 계산기 *");
+		System.out.print(" * 얼마 가져가실건가용? (1,000원 이상) : ");
+		double money = scan.nextInt();
+		double exchangeDubai = (money * exchangeD) / 1000;
+		int count = 0;
+		int num = 1000;
+		
+		while(exchangeDubai > num) {
+			num *= 1000;
+			count++;
+		}
+		num /= 1000;
+		
+		System.out.print(" * 환전하면 ");
+		while(exchangeDubai > 1000) {
+			System.out.print(((int)exchangeDubai)/num + ",");
+			exchangeDubai %= num;
+			num /= 1000;
+		}
+		System.out.print((int)exchangeDubai + ".");
+
+		System.out.print((int)((exchangeDubai-(int)exchangeDubai)*100%100));
+		System.out.println(" AED 입니당!");
+		
+	}
 }
 
 

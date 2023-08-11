@@ -12,24 +12,19 @@ public class MainTravel {
 		Mauritius mauritius = new Mauritius("Africa", "Franch");
 		
 		country.intro();
-		System.out.println();
-		
-		
-		
-		dubai.arrivalTimeDubai();
-		
-		
-		
-		
-		String wanna = scan.nextLine();
-		
+		String wanna = scan.nextLine();		
 		if (wanna.equals("코타")||wanna.equals("코타키나발루")) {
+			System.out.println();
 			System.out.println(kota.toString());
 			
 		} else if (wanna.equals("두바이")) {
-			System.out.println(dubai.toString());
-			
+			System.out.println();
+//			System.out.println(dubai.toString());
+//			dubai.arrivalTimeDubai();
+			System.out.println();
+			dubai.exchangeMoneyDubai();
 		} else if (wanna.equals("모리셔스")) {
+			System.out.println();
 			System.out.println(mauritius.toString());
 			
 		} else { 
