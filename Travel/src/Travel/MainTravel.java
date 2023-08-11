@@ -1,4 +1,5 @@
 package Travel;
+import java.util.ArrayList;
 import java.util.Scanner;
 public class MainTravel {
 
@@ -9,6 +10,8 @@ public class MainTravel {
 		Country country = new Country("어쩌구", "저쩌구");
 		Kota kota = new Kota("Malaysia", "Malay");
 		Dubai dubai = new Dubai("United Arab Emirates", "Arabic");
+		ArrayList<Dubai> landmarkD = new ArrayList<>();
+		
 		Mauritius mauritius = new Mauritius("Africa", "Franch");
 		
 		country.intro();
@@ -37,13 +40,8 @@ public class MainTravel {
 		
 		
 		
+		
 	}
 
 }
 
-
-
-
-
-
-//		dubai.arrivalTimeDubai(); //확인 후 삭제

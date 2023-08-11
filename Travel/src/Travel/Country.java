@@ -4,6 +4,8 @@ public class Country {
 	Scanner scan = new Scanner(System.in);
 	String nation;
 	private String language;
+	private String activity;
+	private String food;
 
 	Country() {
 		
