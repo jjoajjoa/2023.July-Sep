@@ -25,7 +25,9 @@ public class MainClassCard {
 			player.playerCard(pl);		
 			computer.computerCard();
 			
-			score += Progress.play(pl, computer);
+			Progress progress = new Progress(pl,computer.numCom);
+			
+			score += Progress.play(pl, computer.numCom);
 			if(score > 10 || score < -10) {
 				break;
 			}

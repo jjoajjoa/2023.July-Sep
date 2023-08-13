@@ -2,9 +2,17 @@ package gameCard;
 
 public class Progress {
 	
+	int pl;
+	int numCom;
 	
-	int play(int pl, int computer) {
-		if((pl == 1 && computer == 4) || (pl == 4 && computer == 1)) {
+	Progress(int pl, int numCom) {
+		this.pl = pl;
+		this.numCom = numCom;
+	}
+	
+	
+	static int play(int pl, int numCom) {
+		if((pl == 1 && numCom == 4) || (pl == 4 && numCom == 1)) {
 			System.out.println("노예와 왕이 만났습니다!");
 			if(pl == 1) {
 				return 100;
@@ -12,9 +20,9 @@ public class Progress {
 				return -100;
 			}
 
-		} else if(pl > computer) {
+		} else if(pl > numCom) {
 			return 1;
-		} else if(computer > pl) {
+		} else if(numCom > pl) {
 			return -1;
 		}
 		return 0;
