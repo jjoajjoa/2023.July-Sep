@@ -16,7 +16,7 @@ public class Class06 {
 			if(max < score) {
 				max = score;
 			}
-			if(min > score) {
+			if(min > score) { 
 				min = score;
 			}
 			
