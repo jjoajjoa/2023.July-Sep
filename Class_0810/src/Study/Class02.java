@@ -1,40 +1,27 @@
 package Study;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Class02 {
 
 	public static void main(String[] args) {
 		
-		int[][] arr = new int [8][8];
+		Scanner scan = new Scanner(System.in);
 		
-		int i = 0;
-		int j = 0;
-		int round = 1;
-		
-		while(true) {
-			if(round%2==0) {
-				arr[i][j] = 8*i+j+1;
-			}
+		try {
+			System.out.print("숫자 입력 : ");
+			int n1 = scan.nextInt();
 			
+			System.out.print("숫자 입력 : ");
+			int n2 = scan.nextInt();
+			int result = n1/n2;
+			System.out.println("결과 : " + result);
+		} catch(ArithmeticException e) {
+			System.out.println("0으로 나눌 수 없습니다.");
+		} catch(InputMismatchException e) {
+			System.out.println("올바른 숫자를 입력해주세요.");
 		}
-		
-		
-		
-		
-		//출력
-		for(int i=0; i<arr.length; i++) { //arr.length -> row의 길이
-			for(int j=0; j<arr[0].length; j++) { //arr[0].length -> col의 길이
-				if(arr[i][j] < 10 ) {
-					System.out.print(" " + arr[i][j] + " ");
-				} else {
-					System.out.print(arr[i][j] + " ");
-				}
-			}
-			System.out.println();	
-		}
-		
-		
-		
-		
 		
 		
 		
@@ -49,11 +36,3 @@ public class Class02 {
 
 
 
-//		for(int i=0; i<arr.length; i++) { //arr.length -> row의 길이
-//			for(int j=0; j<arr[0].length; j++) { //arr[0].length -> col의 길이
-//				arr[i][j] = 8*i +j+1;
-//				
-//				
-//			}
-//			
-//		}
