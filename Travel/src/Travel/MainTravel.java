@@ -11,8 +11,13 @@ public class MainTravel {
 		Kota kota = new Kota("Malaysia", "Malay");
 		Dubai dubai = new Dubai("United Arab Emirates", "Arabic");
 		ArrayList<Dubai> landmarkD = new ArrayList<>();
-		
 		Mauritius mauritius = new Mauritius("Africa", "Franch");
+
+		Airplane airplane = new Airplane();
+		Airplane airplaneEmirates = new Airplane("Emirates", 9);
+		Airplane airplaneAirSeoul = new Airplane("AirSeoul", 4);
+		Airplane airplaneKoreanAir = new Airplane("KoreanAir", 12);
+		
 		
 		country.intro();
 		String wanna = scan.nextLine();		
@@ -21,10 +26,10 @@ public class MainTravel {
 			System.out.println(kota.toString());
 			
 		} else if (wanna.equals("두바이")) {
-			System.out.println();
-//			System.out.println(dubai.toString());
-//			dubai.arrivalTimeDubai();
-			System.out.println();
+			airplaneEmirates.airplaneInfo();
+			airplaneEmirates.airplaneSetting();
+			System.out.println(dubai.toString());
+			dubai.arrivalTimeDubai();
 			dubai.exchangeMoneyDubai();
 		} else if (wanna.equals("모리셔스")) {
 			System.out.println();

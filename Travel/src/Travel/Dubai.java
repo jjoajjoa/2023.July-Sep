@@ -32,10 +32,12 @@ public class Dubai extends TransferX {
 	
 	@Override
 	public String toString () {
+		System.out.println();
 		return super.toString() + " dubai에서는 " + this.getLanguage() + "을 사용합니당!";
 	}
 	
 	void arrivalTimeDubai() { //도착시간 계산기
+		System.out.println();
 		System.out.println(" * 도착시간 계산기 *");
 		System.out.print(" * 출발hour을 입력해주세용!! (24시간 기준) : ");
 		double departureH = scan.nextInt();
@@ -90,6 +92,7 @@ public class Dubai extends TransferX {
 	}
 	
 	void exchangeMoneyDubai () {
+		System.out.println();
 		System.out.println(" * 환전 계산기 *");
 		System.out.print(" * 얼마 가져가실건가용? (1,000원 이상) : ");
 		double money = scan.nextInt();
