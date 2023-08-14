@@ -10,20 +10,25 @@ public class MainTravel {
 		Country country = new Country("어쩌구", "저쩌구");
 		Kota kota = new Kota("Malaysia", "Malay");
 		Dubai dubai = new Dubai("United Arab Emirates", "Arabic");
-		ArrayList<Dubai> landmarkD = new ArrayList<>();
+		ArrayList<String> landmarkD = new ArrayList<>();
+		landmarkD.add("Burj Khalifa");
+		landmarkD.add("Jumeirah Public Beach");
 		Mauritius mauritius = new Mauritius("Africa", "Franch");
 
 		Airplane airplane = new Airplane();
-		Airplane airplaneEmirates = new Airplane("Emirates", 9);
 		Airplane airplaneAirSeoul = new Airplane("AirSeoul", 4);
+		Airplane airplaneEmirates = new Airplane("Emirates", 9);
 		Airplane airplaneKoreanAir = new Airplane("KoreanAir", 12);
 		
 		
 		country.intro();
 		String wanna = scan.nextLine();		
 		if (wanna.equals("코타")||wanna.equals("코타키나발루")) {
-			System.out.println();
+			airplaneAirSeoul.airplaneInfo();
+			airplaneAirSeoul.airplaneSetting();
 			System.out.println(kota.toString());
+			kota.exchangeMoneyKota();
+			kota.arrivalTimeKota();
 			
 		} else if (wanna.equals("두바이")) {
 			airplaneEmirates.airplaneInfo();
@@ -31,9 +36,13 @@ public class MainTravel {
 			System.out.println(dubai.toString());
 			dubai.arrivalTimeDubai();
 			dubai.exchangeMoneyDubai();
+			
 		} else if (wanna.equals("모리셔스")) {
-			System.out.println();
+			airplaneKoreanAir.airplaneInfo();
+			airplaneKoreanAir.airplaneSetting();
 			System.out.println(mauritius.toString());
+			mauritius.arrivalTimeMauritius();
+			mauritius.exchangeMoneyMauritius();
 			
 		} else { 
 			System.out.println("다시 입력해주숑");

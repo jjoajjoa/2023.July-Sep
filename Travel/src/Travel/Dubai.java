@@ -2,9 +2,10 @@ package Travel;
 
 public class Dubai extends TransferX {
 // 추천계절 11~3월
-	static final double flightTimeD = 570; //비행시간(m)
-	static final int timeDiffD = 5; //시차(h)
-	static final double exchangeD = 2.77; //환율
+	private static final String name = "Dubai";
+	private static final double flightTimeD = 570; //비행시간(m)
+	private static final int timeDiffD = 5; //시차(h)
+	private static double exchangeD = 2.77; //환율
 	
 	Dubai(String nation, String language) {
 		super(nation, language);
@@ -27,13 +28,13 @@ public class Dubai extends TransferX {
 	
 	@Override
 	public void oneLineReview() {
-	
+		System.out.println(" * ★★★★★ / 두바이를 경유지로만 사용하지 마라! / 익명");
 	}
 	
 	@Override
-	public String toString () {
+	public String toString() {
 		System.out.println();
-		return super.toString() + " dubai에서는 " + this.getLanguage() + "을 사용합니당!";
+		return super.toString() + " " + name + "에서는 " + this.getLanguage() + "을 사용합니당!";
 	}
 	
 	void arrivalTimeDubai() { //도착시간 계산기

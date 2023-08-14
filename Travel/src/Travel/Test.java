@@ -4,9 +4,45 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		double exchangeDubai = 2650540.1234564;
-		double nanugi1 = 2650.540;
-		double nanugi2 = 2.650540;
+		double ex = 2650540.1234564;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 //		2650540/10 = 265054 
 //				265054/10 = 26505
@@ -22,25 +58,25 @@ public class Test {
 //			}			
 //		}
 				
-		int count = 0;
-		int num = 1000;
-		
-		while(exchangeDubai > num) {
-			num *= 1000;
-			count++;
-		}
-		num /= 1000;
-		
-		System.out.print(" * 환전하면 ");
-		while(exchangeDubai > 1000) {
-			System.out.print(((int)exchangeDubai)/num + ",");
-			exchangeDubai %= num;
-			num /= 1000;
-		}
-		System.out.print((int)exchangeDubai + ".");
-
-		System.out.print((int)((exchangeDubai-(int)exchangeDubai)*100%100));
-		System.out.println(" AED 입니당!");
+//		int count = 0;
+//		int num = 1000;
+//		
+//		while(exchangeDubai > num) {
+//			num *= 1000;
+//			count++;
+//		}
+//		num /= 1000;
+//		
+//		System.out.print(" * 환전하면 ");
+//		while(exchangeDubai > 1000) {
+//			System.out.print(((int)exchangeDubai)/num + ",");
+//			exchangeDubai %= num;
+//			num /= 1000;
+//		}
+//		System.out.print((int)exchangeDubai + ".");
+//
+//		System.out.print((int)((exchangeDubai-(int)exchangeDubai)*100%100));
+//		System.out.println(" AED 입니당!");
 		
 
 	}
