@@ -21,15 +21,15 @@ public class MainTravel {
 		
 		country.intro();
 		String wanna = scan.nextLine();		
-		if (wanna.equals("코타")||wanna.equals("코타키나발루")) {
+		if (wanna.equals("코타")||wanna.equals("코타키나발루")||wanna.equals("zhxk")) {
 			
-			kota.
+			travelCourse.courseKota();
 			
-			airplaneAirSeoul.airplaneInfo();
-			airplaneAirSeoul.airplaneSetting();
-			System.out.println(kota.toString());
-			kota.exchangeMoneyKota();
-			kota.arrivalTimeKota();
+//			airplaneAirSeoul.airplaneInfo();
+//			airplaneAirSeoul.airplaneSetting();
+//			System.out.println(kota.toString());
+//			kota.exchangeMoneyKota();
+//			kota.arrivalTimeKota();
 			
 		} else if (wanna.equals("두바이")) {
 			airplaneEmirates.airplaneInfo();

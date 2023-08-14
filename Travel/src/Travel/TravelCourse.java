@@ -2,9 +2,10 @@ package Travel;
 import java.util.ArrayList;
 public class TravelCourse {
 
-	private int choice = (int) Math.random()*6 +1;
+//	private int choice = (int) Math.random()*6 +1;
 	
 	void courseKota() {
+		System.out.println();
 		ArrayList<String> landmarkKt = new ArrayList<>();
 		landmarkKt.add("Jesselton Point");
 		landmarkKt.add("Likas Mosque");
@@ -13,13 +14,18 @@ public class TravelCourse {
 		landmarkKt.add("Tanjung Aru Beach");
 		landmarkKt.add("Filipino Market");
 		
+		
 		for (int i=0; i<3; i++) {
-			System.out.println(landmarkKt.get(i));
+			int choice = (int) Math.random()*6 +1;
+			
+			
+			System.out.println(landmarkKt.get(choice));
 		}
 		
 	}
 	
 	void courseDubai() {
+		System.out.println();
 		ArrayList<String> landmarkD = new ArrayList<>();
 		landmarkD.add("Burj Khalifa");
 		landmarkD.add("Jumeirah Public Beach");
@@ -35,6 +41,7 @@ public class TravelCourse {
 	}
 	
 	void courseMauritius() {
+		System.out.println();
 		ArrayList<String> landmarkMr = new ArrayList<>();
 		landmarkMr.add("Le Morne Beach");
 		landmarkMr.add("Chamarel Seven Coloured Earth Geopark");
