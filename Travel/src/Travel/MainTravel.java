@@ -10,11 +10,9 @@ public class MainTravel {
 		Country country = new Country("어쩌구", "저쩌구");
 		Kota kota = new Kota("Malaysia", "Malay");
 		Dubai dubai = new Dubai("United Arab Emirates", "Arabic");
-		ArrayList<String> landmarkD = new ArrayList<>();
-		landmarkD.add("Burj Khalifa");
-		landmarkD.add("Jumeirah Public Beach");
 		Mauritius mauritius = new Mauritius("Africa", "Franch");
-
+		TravelCourse travelCourse = new TravelCourse();
+	
 		Airplane airplane = new Airplane();
 		Airplane airplaneAirSeoul = new Airplane("AirSeoul", 4);
 		Airplane airplaneEmirates = new Airplane("Emirates", 9);
@@ -24,6 +22,9 @@ public class MainTravel {
 		country.intro();
 		String wanna = scan.nextLine();		
 		if (wanna.equals("코타")||wanna.equals("코타키나발루")) {
+			
+			kota.
+			
 			airplaneAirSeoul.airplaneInfo();
 			airplaneAirSeoul.airplaneSetting();
 			System.out.println(kota.toString());

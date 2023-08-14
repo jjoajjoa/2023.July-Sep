@@ -26,7 +26,7 @@ public class Country {
 	
 	@Override
 	public String toString () {
-		return " * " + nation + "에 위치한";
+		return " * " + nation + "에 위치한 ";
 	}
 
 	void intro () {

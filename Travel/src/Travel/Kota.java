@@ -34,7 +34,7 @@ public class Kota extends TransferX {
 	@Override
 	public String toString() {
 		System.out.println();
-		return super.toString() + " " + name + "에서는 " + this.getLanguage() + "을 사용합니당!";
+		return super.toString() + name + "에서는 " + this.getLanguage() + "을 사용합니당!";
 	}
 	
 	void arrivalTimeKota() {
