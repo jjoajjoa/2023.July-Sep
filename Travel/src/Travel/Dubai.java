@@ -12,11 +12,6 @@ public class Dubai extends TransferX {
 	}
 	
 	@Override
-	public void travelCourse() {
-		
-	}
-	
-	@Override
 	public void activityRecom() {
 	
 	}

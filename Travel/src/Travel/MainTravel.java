@@ -23,33 +23,33 @@ public class MainTravel {
 		String wanna = scan.nextLine();		
 		if (wanna.equals("코타")||wanna.equals("코타키나발루")||wanna.equals("zhxk")) {
 			
-			travelCourse.courseKota();
 			
 //			airplaneAirSeoul.airplaneInfo();
 //			airplaneAirSeoul.airplaneSetting();
 //			System.out.println(kota.toString());
 //			kota.exchangeMoneyKota();
 //			kota.arrivalTimeKota();
+			travelCourse.courseKota();
 			
 		} else if (wanna.equals("두바이")) {
 			
-			travelCourse.courseDubai();
 			
 //			airplaneEmirates.airplaneInfo();
 //			airplaneEmirates.airplaneSetting();
 //			System.out.println(dubai.toString());
 //			dubai.arrivalTimeDubai();
 //			dubai.exchangeMoneyDubai();
+			travelCourse.courseDubai();
 			
 		} else if (wanna.equals("모리셔스")) {
 			
-			travelCourse.courseMauritius();
 			
 //			airplaneKoreanAir.airplaneInfo();
 //			airplaneKoreanAir.airplaneSetting();
 //			System.out.println(mauritius.toString());
 //			mauritius.arrivalTimeMauritius();
 //			mauritius.exchangeMoneyMauritius();
+			travelCourse.courseMauritius();
 			
 		} else { 
 			System.out.println("다시 입력해주숑");

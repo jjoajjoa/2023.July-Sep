@@ -10,12 +10,7 @@ public class Kota extends TransferX {
 	Kota(String nation, String language) {
 		super(nation, language);
 	}
-		
-	@Override
-	public void travelCourse() {
-	
-	}
-	
+
 	@Override
 	public void activityRecom() {
 	
