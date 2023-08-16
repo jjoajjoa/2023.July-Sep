@@ -160,23 +160,34 @@ for i in range(len(a)) :
 print(count)
 
 
-a = [1, 2, 3, 4]
+
+a = [1, 2, 3, 4, 5]
 # a.reverse()
 # print(a)
 # 2. reverse 함수 원리 구현해보기
-# if (len(a)%2 == 0) :
-#     for i in range(len(a)):
-#         a = ""
-#         a[0] = a[len]
-#         a[1] = a[len - 1]
-# else :
-#     for i in range(len(a)):
-#         a = ""
-#         a[0] = a[len]
-#         a[1] = a[len - 1]
-#         a[2] = a[2]
-#
-# print(a)
+b = []
+for i in range(len(a)-1, -1, -1):
+    b.append(a[i])
+print(b)
+
+# 좌우 대칭으로 자리 바꿔주기
+start, end = 0 , len(a)-1
+temp = 0 #잠시 옮겨놓는 변수
+while (end > start):
+    temp = a[start]
+    a[start] = a[end]
+    a[end] = temp #a[start], a[end] = a[end], a[start]
+    start += 1
+    end -= 1
+print(a)
+
+# for문 사용
+for i in range(len(a)//2):
+    tem = a[i]
+    a[i] = a[len(a)-i-1]
+    a[len(a)-i-1] = tem
+print(a)
+
 
 
 # 3. list 함수 원리 숫자로 구현해보기
@@ -190,8 +201,12 @@ for i in range(1, 6) :
 
 print(cnt) # 5
 
-for i in range(1,cnt+1) :
-    n = t // (cnt)
+# for i in range(1,cnt+1) :
+n = t // ((cnt)*10000)
 print(n)
 # lst = list(n)
 # print(lst)
+
+# 2X5 이차원 리스트 만들어서 1~10까지 채우기
+lst = [[0,0],[0,0],[0,0],[0,0],[0,0]]
+
