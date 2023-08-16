@@ -155,18 +155,43 @@ a = [1, 1, 2, 2, 3, 3]
 # 1. count 함수 원리 구현해보기
 count = 0
 for i in range(len(a)) :
-    if (x==a):
+    if (x==a[i]):
         count += 1
 print(count)
 
 
-a = [1, 2, 3]
-a.reverse()
-print(a)
+a = [1, 2, 3, 4]
+# a.reverse()
+# print(a)
 # 2. reverse 함수 원리 구현해보기
+# if (len(a)%2 == 0) :
+#     for i in range(len(a)):
+#         a = ""
+#         a[0] = a[len]
+#         a[1] = a[len - 1]
+# else :
+#     for i in range(len(a)):
+#         a = ""
+#         a[0] = a[len]
+#         a[1] = a[len - 1]
+#         a[2] = a[2]
+#
+# print(a)
 
 
 # 3. list 함수 원리 숫자로 구현해보기
-# s = 123456
+t = 123456
 # lst = list(s)
+# print(lst)
+cnt = 0
+for i in range(1, 6) :
+    if ( (t/10) > 0) :
+        cnt += 1
+
+print(cnt) # 5
+
+for i in range(1,cnt+1) :
+    n = t // (cnt)
+print(n)
+# lst = list(n)
 # print(lst)
