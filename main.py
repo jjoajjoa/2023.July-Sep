@@ -46,20 +46,17 @@
 #     a += x
 # print(f"합계 : {a}")
 
-# x = 0
-# a = 0
-# while (True):
-#     x = int(input("값: "))
-#     a += x
-#     if (x == 0):
-#       break
-# print(f"합계 : {a}")
 
+a = int(input("단: "))
 
-x = int(input("단: "))
-while(True):
-    if (x%2==1):
+if (a%2==0):
+    for i in range(2, 10, 2):
+        print(f" --------{i}단--------")
+        for j in range(1, 10):
+            print(f" {i} X {j} =  {i*j}")
+else :
+    for i in range(1, 10, 2):
+        print(f" --------{i}단--------")
+        for j in range(1, 10):
+            print(f" {i} X {j} =  {i*j}")
 
-        print(f" --------{x}단--------")
-        for i in range(1, 10):
-            print(f" {x} X {i} = {x*i} ")
