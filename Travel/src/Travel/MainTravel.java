@@ -32,18 +32,24 @@ public class MainTravel {
 //			kota.arrivalTimeKota();
 			
 		} else if (wanna.equals("두바이")) {
-			airplaneEmirates.airplaneInfo();
-			airplaneEmirates.airplaneSetting();
-			System.out.println(dubai.toString());
-			dubai.arrivalTimeDubai();
-			dubai.exchangeMoneyDubai();
+			
+			travelCourse.courseDubai();
+			
+//			airplaneEmirates.airplaneInfo();
+//			airplaneEmirates.airplaneSetting();
+//			System.out.println(dubai.toString());
+//			dubai.arrivalTimeDubai();
+//			dubai.exchangeMoneyDubai();
 			
 		} else if (wanna.equals("모리셔스")) {
-			airplaneKoreanAir.airplaneInfo();
-			airplaneKoreanAir.airplaneSetting();
-			System.out.println(mauritius.toString());
-			mauritius.arrivalTimeMauritius();
-			mauritius.exchangeMoneyMauritius();
+			
+			travelCourse.courseMauritius();
+			
+//			airplaneKoreanAir.airplaneInfo();
+//			airplaneKoreanAir.airplaneSetting();
+//			System.out.println(mauritius.toString());
+//			mauritius.arrivalTimeMauritius();
+//			mauritius.exchangeMoneyMauritius();
 			
 		} else { 
 			System.out.println("다시 입력해주숑");

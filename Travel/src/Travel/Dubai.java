@@ -28,7 +28,7 @@ public class Dubai extends TransferX {
 	
 	@Override
 	public void oneLineReview() {
-		System.out.println(" * ★★★★★ / 두바이를 경유지로만 사용하지 마라! / 익명");
+
 	}
 	
 	@Override
