@@ -256,22 +256,14 @@ for i in range(len(a)):
         x = a[i][j] * b[i][j]
         lst.append(x)
     lstN.append(lst)
-print(lst)
+    lst = []
+print(lstN)
 
-# fruit_list = []
-# s = 0
-# for i in range(len(fruit)):
-#     if not((ord(fruit[i]) >= 65 and ord(fruit[i]) <= 90) or (ord(fruit[i]) >= 97 and ord(fruit[i]) <= 122)):
-#         if fruit[s:i] != "": # s != i-1
-#             fruit_list.append(fruit[s:i])
-#         s = i + 1
-# fruit_list.append(fruit[s:len(fruit)])
-# print(fruit_list)
 
 #실습02
 # [ [1,2], [3,4], [5,6] ]
-# a = [ i for i in range(1,7) ]
-# print(a)
+a = [ i for i in range(1,7) ]
+print(a)
 
 #실습03
 # 2차원배열 10*10에 0으로 채우는거
