@@ -247,23 +247,26 @@
 ################# Comprehension Test #####################
 
 #실습01
-a = [ [10,20], [30,40], [50,60] ]
-b = [  [2,3],   [4,5],    [6,7] ]
-lst = []
-lstN = []
-for i in range(len(a)):
-    for j in range(len(a[i])):
-        x = a[i][j] * b[i][j]
-        lst.append(x)
-    lstN.append(lst)
-    lst = []
-print(lstN)
+# a = [ [10,20], [30,40], [50,60] ]
+# b = [  [2,3],   [4,5],    [6,7] ]
+# lst = []
+# lstN = []
+# for i in range(len(a)):
+#     for j in range(len(a[i])):
+#         x = a[i][j] * b[i][j]
+#         lst.append(x)
+#     lstN.append(lst)
+#     lst = []
+# print(lstN)
 
 
 #실습02
 # [ [1,2], [3,4], [5,6] ]
+lst = []
+lstN = []
 a = [ i for i in range(1,7) ]
-print(a)
+
+
 
 #실습03
 # 2차원배열 10*10에 0으로 채우는거
