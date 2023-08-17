@@ -146,7 +146,7 @@ for j in range(len(lst)):
             break
 
 
-
+#############################
 
 
 x = int(input("찾고자 하는 값: "))
@@ -160,6 +160,8 @@ for i in range(len(a)) :
 print(count)
 
 
+
+#############################
 
 a = [1, 2, 3, 4, 5]
 # a.reverse()
@@ -189,24 +191,62 @@ for i in range(len(a)//2):
 print(a)
 
 
+#############################
+
 
 # 3. list 함수 원리 숫자로 구현해보기
+lst = []
 t = 123456
-# lst = list(s)
-# print(lst)
+num = 10
 cnt = 0
 for i in range(1, 6) :
     if ( (t/10) > 0) :
         cnt += 1
 
 print(cnt) # 5
+print(t//10**cnt)
+while (t>num) :
+    lst.append(t//10**cnt)
+    t = t% 10**cnt
+    cnt -= 1
+print(lst)
 
-# for i in range(1,cnt+1) :
-n = t // ((cnt)*10000)
-print(n)
-# lst = list(n)
-# print(lst)
 
-# 2X5 이차원 리스트 만들어서 1~10까지 채우기
-lst = [[0,0],[0,0],[0,0],[0,0],[0,0]]
 
+
+
+#############################
+
+
+# 5X2 이차원 리스트 만들어서 1~10까지 채우기
+#     lst1to10 = [
+#         [1,2],
+#         [3,4],
+#         [5,6],
+#         [7,8],
+#         [9,10]
+#     ]
+
+# lst = { [1,2], [3,4], [5,6], [7,8], [9,10] }
+# print(len(lst))
+# print(len(lst[0]))
+
+for i in range(len(lst)) :
+    for j in range(len(lst[0])) :
+        lst[i][j] = 2*i +j+1
+
+for i in range(len(lst)) :
+    for j in range(len(lst[0])) :
+        print(lst[i][j], end=" ")
+    print()
+
+
+list = []
+num = 1
+for i in range(5) :
+    temp = []
+    for j in range(2) :
+        temp.append(num)
+        num += 1
+    lst.append(temp)
+print(lst)
