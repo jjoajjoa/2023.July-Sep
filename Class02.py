@@ -325,8 +325,6 @@
 # prime_number = [ i for i in range(2, 101) if all(i%j !=0 for j in range(2,i)) ]
 # print(prime_number)
 
-
-
 # -> all함수, any함수
 # 여러개의 조건 or 값이 있는 리스트, 튜플, set ... 값의 조건에 따라 T or F 값을 리턴하는 함수
 # all함수: 모든값이 T 일 때 T
@@ -345,11 +343,16 @@
 # res = any(x==5 for x in lst)
 # print(res) #F
 
+# all any 사용해서 공통음식찾기
+person1 = ["치킨", "피자", "족발", "삼겹살"]
+person2 = ["김밥", "김치찌개", "삼겹살", "쌈밥"]
+person3 = ["치킨", "김치찌개", "떡볶이", "초밥", "삼겹살", "족발", "햄버거", "보쌈", "한우", "아이스크림"]
+
+#01. 일단 두명부터
+a = [ i for i in person1 if any(i==j for j in person2) ]
+print(a)
 
 ################# 별 출력하기 #####################
-
-star = "*"
-space = " "
 
 # 사각형별
 a = [ ["*" for i in range(5)] for j in range(5) ]
