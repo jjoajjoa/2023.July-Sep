@@ -77,14 +77,13 @@
 
 #Hello world -> Hell wrld
 s = "Hello world" # Hello world\n
-# n = 123
+#    12345678901 갯수
+#    01234567890 idxNum
 
 print(s.replace('o', '')) #Hell wrld
 
 lst = list(s)
-# lst2 = lst(n)
 print(lst, " <- lst") #['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
-# print(lst2, " <- lst2")
 
 for i in lst:
     if(i == 'o'):
@@ -101,7 +100,6 @@ s = "" #초기화
 
 for i in lst[:4] + lst[5:7] + lst[8:]:
     s += i
-
 print(s) #Hell wrld
 
 s = "" #초기화
@@ -119,8 +117,7 @@ for i in range(len(lst)):
     if lst[i] == 'o' or i == len(lst)-1:
         lst2 += lst[start:i] #(0,4) (5,7) (8,len-1)
         start = i+1
-
-print(lst2)
+print(lst2, " <-lst2") #['H', 'e', 'l', 'l', ' ', 'w', 'r', 'l']
 
 
 lst = list("hellooooo wooooorld") #문제: 값이 하나 지워질때마다 사이즈가 변하고있음

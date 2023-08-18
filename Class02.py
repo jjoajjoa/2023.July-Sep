@@ -76,6 +76,10 @@
 # 사람 3명이 각각 음식을 여러개 가지고 있을 때,
 # 두명이 서로 음식을 교환해보기
 # 이미 갖고있는 음식이라면 교환 X
+# 실습02-1
+# 리스트 상태에서 3명의 공통음식 찾기
+#
+# 실습02 풀이
 # tom = {"fish", "beef", "vegemil", "bread"}
 # jerry = {"cheese", "meatBall", "vegemil"}
 # jjo = {"salmon", "gadarangFish", "bread", "vegemil"}
@@ -115,6 +119,29 @@
 #
 #     else :
 #         print("메롱")
+
+# # 실습02-1 풀이
+# p1 = ["피자"]
+# p2 = ["피자", "햄버거"]
+# p3 = ["피자", "팝콘", "치킨"]
+# #젤간단하게
+# for i in p1:
+#     for j in p2:
+#         for k in p3:
+#             # if (i==j) & (j==k) & (i==k):
+#             if (i==j==k):
+#                 print(i)
+# #이러캐
+# for i in p1:
+#     if i in p2 and i in p3:
+#         print(i)
+# #또는 이러캐
+# for i in p1:
+#     for j in p2:
+#         if (i==j):
+#             for k in p3:
+#                 if (i==k):
+#                     print(i)
 
 
 ################# List #####################
@@ -246,7 +273,7 @@
 
 ################# Comprehension Test #####################
 
-#실습01
+# 실습01
 # a = [ [10,20], [30,40], [50,60] ]
 # b = [  [2,3],   [4,5],    [6,7] ]
 # lst = []
@@ -260,19 +287,64 @@
 # print(lstN)
 
 
-#실습02
-# [ [1,2], [3,4], [5,6] ]
-lst = []
-lstN = []
-a = [ i for i in range(1,7) ]
+# #실습02
+# # [ [1,2], [3,4], [5,6] ]
+# a = [[i+1 for i in range(10)] for j in range(10)]
+# b = [[j*10 +i+1 for i in range(10)] for j in range(10)]
+# print(a)
+# print(b)
+# c = [[i+1 for i in range(2)] for j in range(3)]
+# print(c)
+# d = [[j*2 +i+1 for i in range(2)] for j in range(3)]
+# print(d)
 
 
-
-#실습03
-# 2차원배열 10*10에 0으로 채우는거
+# #실습03
+# # 2차원배열 10*10에 0으로 채우는거
+# a = [[0 for i in range(10)] for _ in range(10)]
 
 
 #실습04
 # 100 이하의 소수로 이루어진 1차원리스트
 # a = [i for i in range(0,100) if (i%2==1)  ]
 # print(a)
+
+# 먼저 반복문 사용해서 채워보기
+lst = []
+for i in range(2,101) : #1~100까지중에
+    for j in range(2, i) : #j는 약수찾는 임무 수행
+        if (i%j == 0) :
+            break
+        # else: #반복문이 끝낫을때: j가 i까지 도착햇을때
+        #     print(i, end=" ")
+        elif (i-1 == j) :
+            lst.append(i)
+print(lst)
+
+# 리스트 컴프리헨션 사용해보기
+prime_number = [ i for i in range(2, 101) if i%j !=0 for j in range(2,i) ]
+print(prime_number)
+
+
+
+# -> all함수, any함수
+# 여러개의 조건 or 값이 있는 리스트, 튜플, set ... 값의 조건에 따라 T or F 값을 리턴하는 함수
+# all함수: 모든값이 T 일 때 T
+# any함수: 하나라도 T면 T
+# 위에 애를 이러캐 써보기
+number = [i+1 for i in range(10)] # 1~10
+lst = [x for x in number if x%2==0] # ~10 짝수
+# all함수
+res = all(x%2==0 for x in number)
+print(res) #F
+res = all(x%2==0 for x in lst)
+print(res) #T
+# any함수
+res = any(x==5 for x in number)
+print(res) #T
+res = any(x==5 for x in lst)
+print(res) #F
+
+
+################# 별 출력하기 #####################
+
