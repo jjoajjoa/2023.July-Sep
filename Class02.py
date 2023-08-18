@@ -305,25 +305,25 @@
 
 
 #실습04
-# 100 이하의 소수로 이루어진 1차원리스트
-# a = [i for i in range(0,100) if (i%2==1)  ]
-# print(a)
-
-# 먼저 반복문 사용해서 채워보기
-lst = []
-for i in range(2,101) : #1~100까지중에
-    for j in range(2, i) : #j는 약수찾는 임무 수행
-        if (i%j == 0) :
-            break
-        # else: #반복문이 끝낫을때: j가 i까지 도착햇을때
-        #     print(i, end=" ")
-        elif (i-1 == j) :
-            lst.append(i)
-print(lst)
-
-# 리스트 컴프리헨션 사용해보기
-prime_number = [ i for i in range(2, 101) if i%j !=0 for j in range(2,i) ]
-print(prime_number)
+# # 100 이하의 소수로 이루어진 1차원리스트
+# # a = [i for i in range(0,100) if (i%2==1)  ]
+# # print(a)
+#
+# # 먼저 반복문 사용해서 채워보기
+# lst = []
+# for i in range(2,101) : #1~100까지중에
+#     for j in range(2, i) : #j는 약수찾는 임무 수행
+#         if (i%j == 0) :
+#             break
+#         # else: #반복문이 끝낫을때: j가 i까지 도착햇을때
+#         #     print(i, end=" ")
+#         elif (i-1 == j) :
+#             lst.append(i)
+# print(lst)
+#
+# # 리스트 컴프리헨션 사용해보기
+# prime_number = [ i for i in range(2, 101) if all(i%j !=0 for j in range(2,i)) ]
+# print(prime_number)
 
 
 
@@ -332,19 +332,116 @@ print(prime_number)
 # all함수: 모든값이 T 일 때 T
 # any함수: 하나라도 T면 T
 # 위에 애를 이러캐 써보기
-number = [i+1 for i in range(10)] # 1~10
-lst = [x for x in number if x%2==0] # ~10 짝수
-# all함수
-res = all(x%2==0 for x in number)
-print(res) #F
-res = all(x%2==0 for x in lst)
-print(res) #T
-# any함수
-res = any(x==5 for x in number)
-print(res) #T
-res = any(x==5 for x in lst)
-print(res) #F
+# number = [i+1 for i in range(10)] # 1~10
+# lst = [x for x in number if x%2==0] # ~10 짝수
+# # all함수
+# res = all(x%2==0 for x in number)
+# print(res) #F
+# res = all(x%2==0 for x in lst)
+# print(res) #T
+# # any함수
+# res = any(x==5 for x in number)
+# print(res) #T
+# res = any(x==5 for x in lst)
+# print(res) #F
 
 
 ################# 별 출력하기 #####################
+
+star = "*"
+space = " "
+
+# 사각형별
+a = [ ["*" for i in range(5)] for j in range(5) ]
+for i in range(len(a)):
+    print()
+    for j in range(len(a[i])):
+        print(a[i][j], end=" ")
+print()
+print("--------------")
+
+# 대각선별
+a = [ "*" for i in range(5) if any( i==j for j in range(5)) ]
+for i in range(len(a)):
+    for j in range(len(a[i])):
+        print(a[i][j], end=" ")
+print()
+print("--------------")
+
+# 대각선별
+for i in range(5):
+    for j in range(5):
+        if j==i :
+            print("*")
+            break
+        else:
+            print(end=" ")
+print("--------------")
+
+# 대각선별
+lst = []
+for i in range(5):
+    temp = ""
+    for j in range(5):
+        if j==i :
+            temp += "*"
+            break
+        else:
+            temp += " "
+    lst.append(temp)
+for i in lst:
+    print(i)
+print("--------------")
+
+# 대각선별
+lst = [ [" "*i + "*" for i in range(5)] ]
+
+
+
+star = "*"
+space = " "
+# 좀 멋있는 별
+for i in range(5):
+    for j in range(5):
+        if j==i :
+            print(star*(j+1), end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+print("--------------")
+
+# 계단식별
+for i in range(5):
+    for j in range(5):
+        if j<=i :
+            print(star, end=" ")
+        else:
+            print()
+            break
+print()
+print("--------------")
+
+# 계단식별
+lst = []
+for i in range(5):
+    temp = ""
+    for j in range(i+1):
+        temp += "* "
+    lst.append(temp)
+for i in lst:
+    print(i)
+print("--------------")
+
+#계단역순왼쪽정렬
+lst = []
+for i in range(5):
+    for j in range(5):
+        if j>=i :
+            print("*", end="")
+        else:
+            print(end=" ")
+            break
+print()
+print("--------------")
+
 
