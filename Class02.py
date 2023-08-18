@@ -432,16 +432,116 @@ for i in lst:
     print(i)
 print("--------------")
 
+# 계단식별
+lst = [["*" for i in range(j+1)] for j in range(5)]
+print(lst)
+lst = ["*"*(i+1) for i in range(5)]
+print(lst)
+print("--------------")
+
+#계단역순왼쪽정렬
+for i in range(5):
+    for j in range(4, -1, -1):
+        if i <= j :
+            print("*", end=" ")
+    print()
+print("--------------")
+
+#계단역순왼쪽정렬
+for i in range(5):
+    for j in range(5):
+        if i <= j :
+            print("*", end=" ")
+    print()
+print("--------------")
+
 #계단역순왼쪽정렬
 lst = []
 for i in range(5):
+    temp = ""
     for j in range(5):
-        if j>=i :
-            print("*", end="")
-        else:
-            print(end=" ")
-            break
-print()
+        if i <= j:
+            temp += "* "
+    lst.append(temp)
+for i in lst:
+    print(i)
 print("--------------")
+
+# 계단역순왼쪽정렬
+lst = [["*" for i in range(5-j)] for j in range(5)]
+lst = ["*" *(5-i) for i in range(5)]
+for i in lst:
+    print(i)
+print(lst)
+print("--------------")
+
+# 계단역순왼쪽정렬
+lst = ["*" *(5-i) + " "*i for i in range(5)]
+print(lst)
+
+# 계단역순왼쪽정렬
+lst = []
+for i in range(5):
+    temp = []
+    for j in range(4,-1,-1):
+        if i <= j:
+            temp.append("*")
+        else:
+            temp.append(" ")
+    lst.append(temp)
+for i in lst:
+    print(i)
+print(lst)
+
+# 계단역순왼쪽정렬
+lst = ["*" *(i+1) for i in range(5)]
+lst.reverse()
+for i in lst:
+    print(i)
+print(lst)
+
+# 계단역순왼쪽정렬
+lst = ["*" *(i+1) for i in range(5)]
+for i in reversed(lst):
+    print(i)
+print(lst)
+
+#계단역순오른쪽정렬
+for i in range(5):
+    for j in range(5):
+        if i <= j :
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+print("--------------")
+
+# 계단역순오른쪽정렬
+lst = [" "*i + "*"*(5-i)  for i in range(5)]
+for i in lst:
+    print(i)
+print(lst)
+print("--------------")
+
+
+#역삼각형
+for i in range(5):
+    for j in range(5):
+        if i <= j :
+            print("*", end=" ")
+        else:
+            print(" ", end="")
+    print()
+print("--------------")
+
+#삼각형
+# for i in range(5):
+#     for j in range(5):
+#         if i >= j :
+#             print(start=" ", "*")
+#         else:
+#             print(" ", end="")
+#     print()
+# print("--------------")
 
 
