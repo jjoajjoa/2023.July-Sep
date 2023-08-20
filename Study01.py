@@ -93,3 +93,30 @@ for j in range(len(lst)):
         if (lst[i] == "o") :
             del lst[i]
             break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
