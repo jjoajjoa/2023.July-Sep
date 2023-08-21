@@ -66,7 +66,17 @@ print(jpg_list)
 
 print(list(filter(lambda x: x.find(".jpg") != -1, files)))
 print(list(filter(lambda x: '.jpg' in x, files)))
+
 # 숙제 - in, .find 사용하지 않고
+x = "1.jpg"
+print(x[len(x)-4:len(x)+1], " <-")
+print(list(filter(lambda x: x[len(x)-4:] == ".jpg", files)))
+
+
+# for i in lst[:4]:
+#     s += i
+# print(s) #Hell wrld
+
 
 
 # 리스트 세 개의 곱

@@ -5,8 +5,10 @@ class Porsche:
         self._displace = displace #배기량
         self._productYear = productYear
         Porsche.count += 1
+
     def getName(self, name):
-        return name
+        return self._name
+
     def setName(self, name):
         self._name = name
 
@@ -21,8 +23,6 @@ class Porsche:
     @classmethod
     def cntCar(cls):
         print(cls.count)
-
-
 
 
 Taycan = Porsche("Taycan", 100, 2022)

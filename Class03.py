@@ -163,10 +163,13 @@ print(lst) #[1,2,3,4,5,6,7,8,9]
 
 # 재귀함수 사용
 def flatten(data):
-    lst = []
+
     for i in data:
+
         if type(i) == list:
+            lst = []
             lst.append(flatten(data))
+            print()
         else:
             return lst.append(example[i])
 
