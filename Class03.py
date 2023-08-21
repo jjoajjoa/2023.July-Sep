@@ -79,7 +79,7 @@
 #     print(end)
 # test(5)
 
-# 실습03
+# 실습03-1
 # 양의 정수 n을 인자로 받아서 1부터 n까지 합을 구하는 재귀함수
 # def f_sum(n):
 #     if n == 1:
@@ -93,9 +93,9 @@
 # print_odd(1,10) -> 1 3 5 7 9
 # print_odd(3,12) -> 3 5 7 9 11
 # def odd(a, b):
-#     if a==b:
+#     if a == b:
 #         return
-#     if (a+1)%2==0:
+#     if (a+1) %2 == 0:
 #         print(a, end=" ")
 #     odd(a+1, b)
 # odd(3,10)
@@ -107,31 +107,74 @@
 # 1 1 2 3 5 8 13 21
 # fibo(6) -> 8
 # def fibo(n):
-#
-#     if n<2:
-#         return
-#     elif n>=2:
-#
-#         sum = (n-1)+(n-2)
-#         fibo(sum)
-#     print(sum)
-# fibo(6)
+#     if n==1 or n==2:
+#         return 1
+#     return fibo(n-1) + fibo(n-2)
+# print(fibo(6))
 
 
 # 문제03
 # 10진수를 2진수로 변환
 # bin(10) -> 2
 # def bin(n):
-#
-# bin(10)
+#     if n < 2:
+#         print(n%2, end="")
+#         return
+#     bin(n//2)
+#     print(n%2, end="")
+# bin(13)
 
 
 
 # 실습03-2
 # 숫자 입력받아서 높은 자리수부터 출력하기
-def f_number(n):
+# def f_number(n):
+#     if n == 0:
+#         return 0
+#     f_number(n//10)
+#     print(n % 10)
+# f_number(1234)
 
-f_number(123456)
+############################
+# lst = [ [1,2,3], [4,5,6] ]
+# lstN = []
+# for i in range(len(lst)):
+#     for j in range(len(lst[i])):
+#         lstN.append(lst[i][j])
+# print(lstN) #[1, 2, 3, 4, 5, 6]
+
+############################
+# 이상한 리스트 -> 1차원으로 변환시키기
+example = [ [1,2,3], [4, [5,6]], 7, [8,9] ]
+# 반복문 사용
+lst = []
+for i in range(len(example)):  # 4번
+    if type(example[i]) == list:
+        for j in range(len(example[i])):
+            if type(example[i][j]) == list:
+                for k in range(len(example[i][j])):
+                    lst.append(example[i][j][k])
+            else:
+                lst.append(example[i][j])
+    else:
+        lst.append(example[i])
+print(lst) #[1,2,3,4,5,6,7,8,9]
+
+# 재귀함수 사용
+def flatten(data):
+    lst = []
+    for i in data:
+        if type(i) == list:
+
+        else:
+
+
+print(flatten(example))
+
+
+
+
+
 
 
 
