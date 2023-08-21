@@ -143,9 +143,10 @@
 #         lstN.append(lst[i][j])
 # print(lstN) #[1, 2, 3, 4, 5, 6]
 
-############################
+########################################################
 # 이상한 리스트 -> 1차원으로 변환시키기
 example = [ [1,2,3], [4, [5,6]], 7, [8,9] ]
+
 # 반복문 사용
 lst = []
 for i in range(len(example)):  # 4번
@@ -165,10 +166,11 @@ def flatten(data):
     lst = []
     for i in data:
         if type(i) == list:
-
+            lst.append(flatten(data))
         else:
+            return lst.append(example[i])
 
-
+    return lst
 print(flatten(example))
 
 
