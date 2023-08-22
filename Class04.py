@@ -70,14 +70,27 @@ print(jpg_list)
 print(list(filter(lambda x: x.find(".jpg") != -1, files)))
 print(list(filter(lambda x: '.jpg' in x, files)))
 
+
 # 숙제 - in, .find 사용하지 않고
+# 예시
 x = "1.jpg"
 print(x[len(x)-4:len(x)+1], " <-")
+# 람다식
 print(list(filter(lambda x: x[len(x)-4:] == ".jpg", files)))
+# 반복문
+lst = []
+for i in files:
+    for j in range(len(i)):  #i[j] 한글자씩
+        if i[j] == "." :
+            if i[j+1:] == "jpg" :
+                lst.append(i)
+            break
+print(lst)
 
 # 특정 단어가 몇번 들어있는지
-str = "jpgpgjgpjpgjgpjgpjgpjpgjpjgp"
 # jpg
+str = "jpgpgjgpjpgjgpjgpjgpjpgjpjgp"
+
 lst = []
 for i in range(len(str)-2):
     if str[i] == "j":
@@ -86,14 +99,22 @@ for i in range(len(str)-2):
                 lst.append(str[i:i+3])
 print(len(lst), " <<<")
 # jpg 람다,필터사용
-# print(list(filter(lambda )))
+# print(list(filter(lambda x: str[i:i+3] == "jpg" )))
 
 
-# gpjgpj가 있는지 gpjgpjgpj - 1개 (겹치는 것 불가)
-str = "jpgpgjgpjpgjgpjgpjgpjpgjpjgp"
-#                  ^^^^^^
-
-
+# 특정 단어가 몇번 들어있는지
+# gpjgpj가 있는지 - 1개 (gpjgpjgpj: 겹치는 것 불가)
+# str = "jpgpgjgpjpgjgpjgpjgpjpgjpjgp"
+# #                  ^^^^^^
+# cnt = 0
+# lst = []
+# for i in range(len(str)-1):
+#     if str[i:i+6] == "gpjgpj":
+#         lst.append(str[i:i+6])
+#         cnt += 1
+#         str.remove(str[i:i+6])
+#         print(str)
+# print(cnt)
 
 
 
