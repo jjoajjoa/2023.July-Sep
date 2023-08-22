@@ -1,5 +1,5 @@
 class Student:
-    def __init__(self, name, grade, studentNumber):
+    def __init__(self, name="학생", grade=1, studentNumber=1):
         self._name = name
         self._grade = grade
         self._studentNumber = studentNumber
@@ -13,27 +13,34 @@ class Student:
         return self._grade
 
     def info(self):
-        print("이름: ", self._name, " 학년: ", self._grade, end="   ")
+        return "이름: ", self._name, " 학년: ", self._grade, " 학번: ", self._studentNumber
+
 
 class Student20 (Student) :
-    Num = 0
-    grade = 4
-    zero = "000"
-    def __init__(self, name):
-        super().__init__()
-        super().setName(name)
-        Student20.Num += 1
+    gradeNum = 20
+    number = 1
+
+    def __init__(self):
+        super(str(Student20.gradeNum) + "0" + str(Student20.number), 4)
+        self.student = Student20.number
+        self.zero = "000"
+        Student20.number += 1
+
+    def zeroSet(self):
+        num = self.student
+        while num //10 >0 :
+            self.zero = self.zero[0: len(self.zero)-1]
+            num //= 10
+        return self.zero
 
     def info(self):
-        super().info()
-        # print("학번: ", 2020, Student20.Num)
-        print(f"학번: 2020{Student20.Num}")
+        return "이름: ", super().getName(), " 학년: ", super().getGrade(), " 학번: ", Student20.gradeNum, self.zeroSet(), self.student
 
 
 
 
-Kim = Student20("kim")
+Kim = Student20()
 Kim.info()
 
-Lee = Student20("Lee")
+Lee = Student20()
 Lee.info()
