@@ -162,16 +162,17 @@ for i in range(len(example)):  # 4번
 print(lst) #[1,2,3,4,5,6,7,8,9]
 
 # 재귀함수 사용
+example = [ [1,2,3], [4, [5,6]], 7, [8,9] ]
 def flatten(data):
-
+    lst = []
     for i in data:
-
+        # lst = []
         if type(i) == list:
-            lst = []
-            lst.append(flatten(data))
+            # lst = []
+            lst.append(flatten(i))
             print()
         else:
-            return lst.append(example[i])
+            return lst.append(data[i])
 
     return lst
 print(flatten(example))

@@ -55,6 +55,9 @@ print(list(score_list))
 print(list(map(lambda x: "합격" if x>60 else "대기" if 50<x else "불합격", numbers)))
 
 
+
+
+
 # 실습04-2
 # 람다, 필터 사용해서 jpg파일만 골라 리스트 만들기
 files = ["memo.txt", "1.jpg", "32.png", "23.jpg", "223.jpg"]
@@ -72,10 +75,27 @@ x = "1.jpg"
 print(x[len(x)-4:len(x)+1], " <-")
 print(list(filter(lambda x: x[len(x)-4:] == ".jpg", files)))
 
+# 특정 단어가 몇번 들어있는지
+str = "jpgpgjgpjpgjgpjgpjgpjpgjpjgp"
+# jpg
+lst = []
+for i in range(len(str)-2):
+    if str[i] == "j":
+        if str[i+1] == "p":
+            if str[i+2] == "g":
+                lst.append(str[i:i+3])
+print(len(lst), " <<<")
+# jpg 람다,필터사용
+# print(list(filter(lambda )))
 
-# for i in lst[:4]:
-#     s += i
-# print(s) #Hell wrld
+
+# gpjgpj가 있는지 gpjgpjgpj - 1개 (겹치는 것 불가)
+str = "jpgpgjgpjpgjgpjgpjgpjpgjpjgp"
+#                  ^^^^^^
+
+
+
+
 
 
 
