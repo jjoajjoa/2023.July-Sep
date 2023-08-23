@@ -99,16 +99,20 @@ for i in range(len(str)-2):
                 lst.append(str[i:i+3])
 print(len(lst), " <<<")
 # jpg 람다,필터사용
-# print(list(filter(lambda x: str[i:i+3] == "jpg" )))
-
+# 1. 앞글자가 j인 친구 먼저 뽑아보기
+res = list(filter(lambda x: x[0]=="j", [str[i:i+3] for i in range(len(str)-2)]))
+print(res)
+# 2. 그 중에 jpg인 애들만 뽑기
+result = list(filter(lambda y: y=="jpg", res))
+print(result)
 
 # 특정 단어가 몇번 들어있는지
 # gpjgpj가 있는지 - 1개 (gpjgpjgpj: 겹치는 것 불가)
-# str = "jpgpgjgpjpgjgpjgpjgpjpgjpjgp"
-# #                  ^^^^^^
-# cnt = 0
+str = "jpgpgjgpjpgjgpjgpjgpjpgjpjgp"
+#                  ^^^^^^
+cnt = 0
 # lst = []
-# for i in range(len(str)-1):
+# for i in range(len(str)-6):
 #     if str[i:i+6] == "gpjgpj":
 #         lst.append(str[i:i+6])
 #         cnt += 1
@@ -116,7 +120,28 @@ print(len(lst), " <<<")
 #         print(str)
 # print(cnt)
 
+while len(str) >= 6:
+    temp = ""
+    for j in range(6):
+        temp += str[j]
+    if temp == "gpjgpj":
+        cnt += 1
+        str = str[6:]
+    str = str[1:]
+print(cnt)
 
+str = "jpgpgjgpjpgjgpjgpjgpjpgjpjgp"
+i = 0
+count = 0
+while i < len(str)-5:
+    temp = ""
+    for j in range(6):
+        temp += str[i+j]
+    if temp == "gpjgpj": #6글자 찾고나면
+        count += 1 #찾았으니까 하나 증가
+        i += 5 #그러고 순서를 5번째 뒤로 보냄
+    i += 1
+print(count)
 
 
 
