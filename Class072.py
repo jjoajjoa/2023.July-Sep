@@ -18,8 +18,6 @@ class Buchu(Dog):
     def walk(self):
         print("챱챱")
 
-
-aa = Animal()
-aa.eat()
-bb = Dog()
-bb.walk()
+buchu = Buchu()
+buchu.walk() #챱챱
+buchu.eat() #냠냠

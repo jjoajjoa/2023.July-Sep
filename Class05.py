@@ -1,26 +1,26 @@
-# class Dog:
-#     def __init__(self, name, color):
-#         self.hungry = 0
-#         self.name = name
-#         self.color = color
-#
-#     def eat(self):
-#         self.hungry -= 10
-#         print("밥먹음", self.hungry)
-#
-#     def walk(self):
-#         self.hungry += 10
-#         print("산책", self.hungry)
-#
-#
-# choco = Dog("choco", "black")
-# jjong = Dog("jjong", "white")
-#
-# choco.eat()
-# choco.eat()
-# choco.walk()
-# print(choco.hungry)
-# print(jjong.hungry)
+class Dog:
+    def __init__(self, name, color):
+        self.hungry = 0
+        self.name = name
+        self.color = color
+
+    def eat(self):
+        self.hungry -= 10
+        print("밥먹음", self.hungry)
+
+    def walk(self):
+        self.hungry += 10
+        print("산책", self.hungry)
+
+
+buchu = Dog("buchu", "white")
+jelly = Dog("jjong", "brown")
+
+buchu.eat() #밥먹음 -10
+buchu.eat() #밥먹음 -20
+buchu.walk() #산책 -10
+print(buchu.hungry) #-10
+print(jelly.hungry) #0
 
 
 
