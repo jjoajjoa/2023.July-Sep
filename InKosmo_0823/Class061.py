@@ -39,5 +39,6 @@ class Student20(Student):
 
 Kim = Student20()
 print(Kim.toString())
+
 Lee = Student20()
 print(Lee.toString())
