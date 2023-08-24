@@ -49,12 +49,29 @@ class AccountAtm(Account):  # 현금 입출금
         return super().set_amount(-howmuch)
 
 
-# class AccountBank (Account): #예금이자
-
-
-class AccountCredit(Account):  # 결제 한도
-    def __init__(self, amount):
+# class AccountBank (Account): #예금 이자 한달에 한번 지급
+class AccountBank(Account):
+    def __init__(self, amount, balance):
         super().__init__(amount)
+        self._balance = balance
+
+    def interest(self):
+        balance * 0.05 / 12 #한달에 한번 이자 지급
+
+
+class AccountCredit(Account):  # 결제 한도, 한달에 한번 빠져나가게, 포인트
+    def __init__(self, amount, day, payback = 0):
+        super().__init__(amount)
+        self._day = day
+        self._payback = payback
+
+    def payment(self):
+        if
+
+
+    def point(self):
+
+
 
 
 
