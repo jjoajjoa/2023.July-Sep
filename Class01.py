@@ -247,3 +247,13 @@ for i in range(5) :
         num += 1
     lst.append(temp)
 print(lst)
+
+
+
+
+
+
+
+
+
+
