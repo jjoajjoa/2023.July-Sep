@@ -547,4 +547,25 @@ print("--------------")
 #     print()
 # print("--------------")
 
+count = {}
+lst = ["apple", "banana", "apple"]
+for i in lst:
+    try: count[i] += 1
+    except: count[i] = 1
+print(count)
+
+
+# a = [ i*j for i in range(2,10) for j in range(1,10) ]
+# word = ["school", "game", "piano", "science", "hotel", "mountain"]
+# lst1 = [ i for i in word if len(i)>=6 ]
+# print(lst1)
+# lst2 = [len(i) for i in word]
+# print(lst2)
+
+
+
+
+
+
+
 

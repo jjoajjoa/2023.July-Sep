@@ -27,13 +27,11 @@ for i in words:
 print(" * Alice: 총",count, "회 언급")
 
 # 단어 종류
-count = 0
-lst = []
-# a = [i for i in range(len(words))]
+count = {}
 for i in words:
-    if
-
-    else:
+    try: count[i] += 1
+    except: count[i] = 1
+print(count)
 
 
 
