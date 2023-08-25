@@ -165,16 +165,25 @@ data = {
     "City":["New York", "Paris", "Berlin", "London"]
 }
 col_list = ["Name", "Age", "City"]
-df = pd.DataFrame(data, columns = col_list)
+index_list = [0,1,2,3]
+df = pd.DataFrame(data, columns = col_list, index= index_list)
 print(df)
+# print(df.index)
+# print(df.columns)
+# print(df.values)
+# print(df[1:3])
+print("-----------도시기준------------")
+dfc = df.sort_values("City")
+print(dfc)
+print("-----------나이기준------------")
+dfa = df.sort_values("Age")
+print(dfa)
+print("-----------평균나이------------")
+# print(df.mean(axis=1))
 print("-----------------------")
-# df = data.sort_values("City")
-dfc = data.
-print(df)
+# print(df.loc["Name"=="Peter"]["Age"])
 print("-----------------------")
-
-
-
+print(df.values[0])
 
 
 
