@@ -17,32 +17,36 @@ data = {
 
 df = pd.DataFrame(data)
 print(df)
-# print(df.index)
-# print(df.columns)
-# print(df.values)
-# print(df[1:3])
 print("-----------도시기준------------")
 dfc = df.sort_values("City")
 print(dfc)
+
 print("-----------나이기준------------")
 dfa = df.sort_values("Age")
 print(dfa)
+
 print("-----------평균나이------------")
 print(df["Age"].mean())
+
 print("-----------피터 나이------------")
 print(df[df["Name"]=="Peter"]["Age"].values)
+
 print("-----------연장자 도시 이름------------")
 oldman = df.loc[df["Age"].idxmax()]
 print(oldman[["Name", "City"]])
+
 print("-----------대문자------------")
 df["Name"] = df["Name"].str.upper()
 print(df)
+
 print("-----------30살 이상------------")
 oldman30 = df[df["Age"]>=30]
 print(oldman30)
+
 print("-----------도시인구------------")
 citycnt = df["City"].value_counts()
 print(citycnt)
+
 print("-----------젠더추가------------")
 np.random.seed(0)
 df["Gender"] = np.random.choice(["Male", "Female"], size=df.shape[0])
