@@ -18,9 +18,10 @@ def select():
         del_list()
         int(input("삭제완룡"))
 
-    elif menu == 4: #종료
+    elif menu == 0: #종료
         print("종료")
-        return 4
+        return -1
+    return 0
 
     else:
         print("다시 입력해주셍")
@@ -28,18 +29,21 @@ def select():
 
 
 def write_input(inputName, inputMath, inputEnglish):
-    # lst = []
-    score_data = {"name": inputName, "math": inputMath, "english": inputEnglish}
-    # lst.append(score_data)
-
     lst = []
+    score_data = {"name": inputName, "math": inputMath, "english": inputEnglish}
+
     with open("scoreData.p", "rb") as f:
-        lst.append(pickle.load(f))
+        item = pickle.load(f)
+
+    if item != "":
+        if type(item) == dict:
+          lst.append(item)
+        elif type(item) == list:
+          lst += item
 
     lst.append(score_data)
     with open("scoreData.p", "wb") as f:
-        pickle.dump(score_data, f)
-
+        pickle.dump(lst, f)
 
 
 
@@ -49,21 +53,6 @@ def read_list():
         check = pickle.load(f)
     for i in range(len(check)):
         print(f"[{i}] 이름: {check[i]["name"]}, 수학: {check[i]["math"]}, 영어: {check[i]["english"]}")
-
-
-    # try:
-    #     with open("scoreData.p", "rb") as f:
-    #         check = pickle.load(f)
-    #
-    #
-    # except: # 0명일때 처리
-    #     with open("scoreData.p", "rb") as f:
-    #         f.write("404")
-    #         check = "404"
-    # return check
-
-
-
 
 
 
@@ -79,5 +68,6 @@ def del_list(delete):
 #####################################################################
 print(" * 성적 관리 프로그램 *")
 while True:
-    select()
+    if select() == -1:
+        break
 
