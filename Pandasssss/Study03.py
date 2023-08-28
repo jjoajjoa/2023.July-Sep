@@ -21,7 +21,7 @@ print(data1)
 np.random.seed(0)
 data2 = pd.DataFrame({
     "ID": ["ID_" + str(i) for i in range(1, 1001)],
-    "Income": np.random.randint(200, 900, 1000)
+    "Income": np.random.randint(200, 900, size=1000)
 })
 print(data2)
 
@@ -36,7 +36,7 @@ data3 = pd.DataFrame({
 print(data3)
 
 # 1. 1번 데이터셋과 2번 데이터셋 병합 (ID기준)
-data12 = pd.merge(data1, data2, on='ID')
+data12 = pd.merge(data1, data2, on='ID', how="outer")
 print(data12)
 
 # 2. 병합된 데이터에 City기준으로 병합
@@ -44,7 +44,7 @@ data = pd.merge(data12, data3, on='City')
 print(data)
 
 # 3. 각 나라별 평균 월급
-group = data.groupby(['City'])['Income'].mean()
+group = data.groupby('City')['Income'].mean()
 print(group)
 
 # 4. 제일 월급이 높은 사람은 어디 사람인지 출력
@@ -52,3 +52,4 @@ rich = data.loc[data["Income"].idxmax()]
 print(rich)
 richman = data.loc[data["Income"].idxmax()]
 print(richman[["ID", "City"]])
+print("월급최대 >>> ", data.loc[data["Income"].idxmax()]["Country"])
