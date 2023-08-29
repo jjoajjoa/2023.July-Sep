@@ -40,6 +40,7 @@ def create_scatter_plot(data):
     x_position = [20000, 40000, 60000, 80000]
     plt.xticks(x_position, x_label,rotation=45)
 
+
     plt.scatter(x_coord_lst, y_coord_lst, color = colors, alpha=0.5) # 알파:투명도(0~1)
     plt.xlabel('주소')
     plt.ylabel('나이')
