@@ -31,6 +31,11 @@ def create_scatter_plot(data):
     plt.xlabel("나이")
     plt.title("서초구 사람들")
 
+
+
+
+
+
 def compare_age(data):
     male_lst = [age for age, gender, _ in data if gender == "남성"]
     female_lst = [age for age, gender, _ in data if gender == "여성"]
