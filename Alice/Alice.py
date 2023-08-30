@@ -69,3 +69,4 @@ for i in words:
 # for
 # print(f"{i} : {words}")
 print(" * 단어 종류: ", len(dic), "개")
+
