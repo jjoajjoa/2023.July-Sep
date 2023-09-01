@@ -40,16 +40,3 @@ public class Class01 {
 // String
 // boolean - True or False  
 // void - 비어있다.
-
-
-
-
-
-
-
-
-
-
-
-
-

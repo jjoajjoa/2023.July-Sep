@@ -2,6 +2,7 @@ package Class0728_2;
 import java.util.Scanner;
 
 public class Class06 {
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int[] arr = {0,0,0,0,0}; 

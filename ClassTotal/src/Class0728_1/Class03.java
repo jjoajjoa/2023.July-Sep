@@ -49,12 +49,3 @@ public class Class03 {
 //철수 : ?점, 영희 : ?점, 성공:true or false
 
 
-
-
-
-
-
-
-
-
-

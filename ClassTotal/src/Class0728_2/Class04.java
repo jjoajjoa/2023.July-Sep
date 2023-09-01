@@ -1,4 +1,5 @@
 //2.숫자를 n개 입력받아서, A, B, C, D, F가 각각 몇 명인지, 최고점, 최하점, 평균
+
 package Class0728_2;
 
 import java.util.Scanner;

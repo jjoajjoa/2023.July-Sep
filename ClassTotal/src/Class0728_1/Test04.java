@@ -1,4 +1,5 @@
 //3.점수 5개를 입력받는다. 최고점을 출력.
+
 package Class0728_1;
 
 import java.util.Scanner;

@@ -17,6 +17,7 @@ public class Class07 {
 		
 		//String 배열 5개짜리 -> 사용자 입력 받은 값이 배열에 들어있는지 없는지 찾아보는 프로그램.
 		//str[0].equals(menu) -> true of false
+		
 		String menu = scan.next();
 
 		for(int i=0; i<5; i++) {

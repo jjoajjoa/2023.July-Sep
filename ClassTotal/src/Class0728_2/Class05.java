@@ -1,6 +1,7 @@
 package Class0728_2;
 
 public class Class05 {
+	
 	public static void main(String[] args) {
 		int[] arr = new int[400];
 		

@@ -3,6 +3,7 @@ package Class0728_2;
 public class Class08 {
 
 	public static void main(String[] args) {
+		
 		int[][] student = new int[6][4];
 		
 		for(int i=0; i<6; i++) {

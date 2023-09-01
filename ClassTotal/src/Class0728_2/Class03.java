@@ -1,6 +1,7 @@
 package Class0728_2;
 import java.util.Scanner;
 
+
 public class Class03 {
 
 	public static void main(String[] args) {
