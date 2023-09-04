@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 폼 배우는 중 </title>
+    </head>
+    <boby>
+        <form>
+            <fieldset>
+            <legend>회원정보</legend>
+            이름: <input type="text" value="" placeholder="세글자"><br>
+            비번: <input type="password" value="" maxlength="4"><br>
+            소개: <textarea cols="20" rows="5">
+                    자기소개 해보세용
+                </textarea>
+            </fieldset>
+        </form>
+        <hr>
+        <form>
+            나라 : <input type="text" list="countries"><br>
+                        <datalist id="countries">
+                            <option value="가나">
+                            <option value="스위스">
+                            <option value="브라질">
+                        </datalist>
+            보고싶은것 : <input type="text" list="what"><br>
+                        <datalist id="what">
+                            <option value="산">
+                            <option value="바다">
+                            <option value="도시">
+                        </datalist>
+        </form>
+        <hr>
+        <form>
+            지속시간 (0.0 ~ 10.0시간) :
+            <input type="number" min="0.0" max="10.0" step="0.5"><br><br>
+            온도설정:
+            10&deg;
+            <input type="range" min="10" max="30" list="temperatures">
+            30&deg;
+            <datalist id="temperatures">
+                <option value="19" label="Low"></option>
+                <option value="20" label="Medium"></option>
+                <option value="28" label="high"></option>
+            </datalist>
+        </form>
+        <hr>
+        <form>
+            색깔 선택하기
+            <input type="color" value="#00BFFF" onchange="document.body.style.color=this.value">
+        </form>
+        <hr>
+        <form>
+            짜장면 <input type="checkbox" value="1">
+            짬뽕 <input type="checkbox" value="2" checked>
+            탕수육 <input type="checkbox" value="3">
+        </form>
+        <hr>
+        <form>
+            <label>
+                <input type="radio" name="baby" value="1">
+                애기쪼랭 <img src="./image_pack/jjo2.jpg" width="130" height="150">
+            </label><br>
+            <label>
+                <input type="radio" name="child" value="2">
+                딩초쪼랭 <img src="./image_pack/jjo3.jpg" width="130" height="130"> 
+            </label><br>
+        </form>
+
+    </body>
+</html>
