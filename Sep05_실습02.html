@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>실습02</title>
+    <style>
+        main {
+            background-image: url(./image_pack/jjo.jpg);
+            background-size: 500px 530px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .flex {
+            display: flex;
+            justify-content: center; 
+            height: 300px;
+            gap: 15px;
+        }
+        .grid {            
+            display: grid;
+            justify-content: center; 
+            grid-template-columns: repeat(3, 20%);
+            gap: 10px;
+            
+        }
+        .box {
+            width: 170px;
+            height: 200px;
+            background-color: lightgray;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h3>Flexbox Ex:</h3>
+    <div class="flex">
+    	<div class="box">
+            <h3>스테이크</h3>스테이크 살살 녹음</div>
+        <div class="box">
+            <h3>파스타</h3>면이 쫀쫀함</div>
+        <div class="box">
+            <h3>초밥</h3>생생 그 자체</div>
+        <div class="box">
+            <h3>쪼랭</h3><img src="./image_pack/jjo3.jpg" width="120" height="100"></div>
+    </div>
+
+    <h3>Grid Layout Ex:</h3>
+    <div class="grid">
+    	<div class="box">
+            <h3>스테이크</h3>스테이크 살살 녹음</div>
+        <div class="box">
+            <h3>파스타</h3>면이 쫀쫀함</div>
+        <div class="box">
+            <h3>초밥</h3>생생 그 자체</div>
+        <div class="box">
+            <h3>쪼랭</h3>
+            <a href="./Class0904/Sep04_jjo.html">생생한 쪼랭 쫀쫀 살살녹음</a></div>
+    </div>
+    </main>
+</body>
+</html>
