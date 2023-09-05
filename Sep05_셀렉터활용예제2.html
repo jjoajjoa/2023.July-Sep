@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>셀렉터 활용예제 2</title>
+    <style>
+
+        h1 {
+            font-size: 32px;
+        }
+        p {
+            color: red;
+        }
+        .list li {
+            background-color: greenyellow;
+        }
+        #container p {
+            color: blue;
+        }
+        #container p.exception {
+            color: green;
+        }       
+        a:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+  <div id="container">
+    <h1>Title</h1>
+    <p>This is a paragraph.</p>
+    <p class = "exception">This is a paragraph.</p>
+    <ul class="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+  </div>
+
+  <a href="#">Link</a>
+
+  <p> END </p>
+
+</body>
+</html>
+
+<!--h1태그 글자 32픽셀-->
+<!--p태그 글자 빨간색-->
+<!--링크 마우스 노랑색-->
+<!--.list ul 배경 연두색-->
+<!--컨테이너p태그 파란색 익셉션p태그 연두색-->
