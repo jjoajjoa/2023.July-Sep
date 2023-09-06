@@ -10,18 +10,19 @@
 </head>
 <body>
     <script>
+        var cnt=0
         var inputUser = prompt("확인이 필요한 문자를 입력해보숑")
         
         for (i=0; i<=inputUser.length-1; i++) {
             if (inputUser[i] == inputUser[inputUser.length-1-i]) {
-                document.write(":-P ")
-                
-            } else {
-                alert("아닌듯")
-            }
-        
+                cnt++;
+            } else {}
         }
-
+        if (cnt == inputUser.length) {
+            alert("맞는듯")
+        } else {
+            alert("아닌듯")
+        }
         
 
     </script>
