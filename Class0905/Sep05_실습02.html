@@ -12,16 +12,15 @@
         }
         .flex {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center; 
             height: 300px;
-            gap: 15px;
         }
         .grid {            
             display: grid;
             justify-content: center; 
-            grid-template-columns: repeat(3, 20%);
+            grid-template-columns: repeat(3, 200px);
             gap: 10px;
-            
         }
         .box {
             width: 170px;
@@ -29,6 +28,8 @@
             background-color: lightgray;
             border-radius: 5px;
             text-align: center;
+            margin: 10px;
+            padding: 20px;
         }
     </style>
 </head>
