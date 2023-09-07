@@ -1,0 +1,41 @@
+<!--반응속도 테스트-->
+<!--웹페이지에 랜덤한 알파벳이 표시되고 사용자가 해당 문자를 키보드로 입력함-->
+<!--정확한 키를 누르면 정답과 함께 시간이 표시되고-->
+<!--오답이면 오답표시해주기-->
+<!--keydown keypress event Date.now() Math.random 등 사용-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>문제01</title>
+    <style></style>
+    <script></script>
+</head>
+<body>
+    <h3>반응속도 테스트</h3><hr>
+    <p id="result"></p>
+
+    <script>
+        var now = new Date();
+        
+        var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        var temp = Math.random()*alphabet.length;
+        var num = Math.floor(temp);
+        var randAlpha = "";        
+        for (var i=0; i<alphabet.length; i++) {
+            randAlpha = alphabet[num]   
+        }
+        document.write("Press! -> " + randAlpha + "<br>");
+        
+        document.write("0." + now.getMilliseconds());
+        
+
+
+
+    </script>
+    
+    
+
+    
+</body>
+</html>
