@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>셋 타임아웃으로 웹페이지 자동연결</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h3>이미지에 마우스 올리고 5초간 그대로 있을 때 사이트로 이동</h3><hr>
+
+    <img id="img" src="../image_pack/jjo.jpg"
+        onmouseover="startTimer(5000)"
+        onmouseout="cencleTimer()">
+    <script>
+        var timerId = null;
+        function startTimer(time) {
+            timerId = setTimeout("load('http://www.naver.com')", time);
+            document.getElementById("img").title = "타이머 작동 시작"
+        }
+        function cencleTimer() {
+            if (timerId != null)
+                clearTimeout(timerId);
+        }
+        function load(url) {
+            window.location = url;
+        }
+    </script>
+</body>
+</html>
