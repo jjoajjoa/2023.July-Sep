@@ -1,0 +1,9 @@
+.button {
+    background-color: tomato;
+    color: black;
+    padding: 30px;
+}
+
+.button:hover {
+    background-color: blanchedalmond;
+}
