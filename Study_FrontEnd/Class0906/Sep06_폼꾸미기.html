@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>폼 스타일 주기</title>
+    <style>
+        input[type=text] {
+            color: tomato;
+        }
+        input:hover, textarea:hover {
+            background: aliceblue;
+        }
+        input[type=text]:focus, input[type=email]:focus {
+            font-size: 120%;
+        }
+        label {
+            display: block;
+            padding: 10px;
+        }
+        label span {
+            float:left;
+            width: 90px;
+            text-align: right;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Contact US</h3>
+    <hr>
+
+    <form>
+        <label>
+            <span>Name</span><input type="text" placeholder="jjo"><br>
+        </label>
+        <label>
+            <span>Email</span><input type="email" placeholder="jjo@raeng.com">
+        </label>
+        <label>
+            <span>Comments</span><textarea placeholder="메세지를 남겨주세용"></textarea>
+        </label>
+        <label>
+            <span></span><input type="submit" value="SUBMIT">
+        </label>
+    </form>
+</body>
+</html>

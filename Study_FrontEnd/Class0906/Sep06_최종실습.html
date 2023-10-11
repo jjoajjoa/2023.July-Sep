@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>homeSwiteHome</title>
+    <style>
+        header {
+            background-color: antiquewhite;
+            text-align: center;
+            border: 50px;
+        }
+        #navbar {background: rgba(95, 158, 160, 0.664); text-align: center;}
+        #navbar ul {margin: 0; padding: 0; text-align: center;}
+        #navbar ul li {display: inline; list-style-type: none; padding: 0px 20px;}
+        #navbar ul li a {text-decoration: none;}
+        #navbar ul li a:focus{font-size: 110%;}
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box {
+            width: 170px;
+            height: 200px;
+            background-color: rgb(253, 207, 214);
+            border-radius: 5px;
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+        }
+        .floatL {
+            position: fixed;
+            top: 300px;
+            left: 0;
+        }
+        .floatR {
+            position: fixed;
+            top: 300px;
+            right: 0;
+        }
+        div h3 {
+            text-shadow: 3px 3px 5px tomato;
+        }
+        footer {background-color: lightgrey;}
+    </style>
+</head>
+<body>
+    <header><br><h3>즐거운 우리집</h3><hr></header>
+    <main style="background-color: rgba(243, 235, 225, 0.589);">
+        <p class="floatL"><img src="./image_pack/ad1.jpg" height="50%" width="50%"></p>
+        <p class="floatR"><img src="./image_pack/ad2.jpg" height="50%" width="50%"></p>
+
+        <nav id="navbar"><ul><li><a href="home">Home</a></li><li>김쪼랭</li><li>김부추</li><li>ㄸㅓ기</li></ul></nav>
+
+        <div style="text-align: center;">
+        <h3 class="home">&#34;Home&#34;</h3>
+        <div class="flex">
+            <div class="box">
+                <h4>김쪼랭</h4><img src="./image_pack/jjo3.jpg" width="120" height="100"><br>야옹이</div>
+            <div class="box">
+                <h4>김부추</h4><img src="./image_pack/buchu.jpg" width="120" height="100"><br>멍멍이</div>
+            <div class="box">
+                <h4>ㄸㅓ기</h4><img src="./image_pack/ddeogi.jpg" width="120" height="100"><br>핑핑이</div>
+        </div>
+        </div>
+
+        <div style="text-align: center; background-color: rgba(240, 248, 255, 0.5);"><hr>
+        <h3>&#34;김쪼랭&#34;</h3>
+            <p>
+                쪼랭이는 2019년에 태어난 고양이애용<br>
+                츄르 가다랑어맛과 식빵을 제일 좋아해요<br>
+                <details>
+                    <summary>쪼랭이가 싫어하는 것</summary>
+                    <p><ul><li>목욕</li><li>샤워</li><li>치카</li></ul></p>
+                </details>    
+            </p><hr>
+        </div>
+
+        <div style="text-align: center;;">
+        <h3>&#34;김부추&#34;</h3>
+            <p>
+                김부추는 몇살인지 기억이 잘 안나지만 어르신 강아지예용<br>
+                몸이 안좋은데 부디 아프지말고 오래오래 건강했음 좋겠어용<br>
+                <details>
+                    <summary>부추가 싫어하는 것</summary>
+                    <p><ul><li>목욕</li><li>샤워</li><li>치카</li></ul></p>
+                </details>
+
+            </p>
+        </div>
+
+        <div style="text-align: center; background-color: rgba(240, 248, 255, 0.5)"><hr>
+        <h3>&#34;ㄸㅓ기&#34;</h3>
+            <p>
+                ㄸㅓ기는 달팽이입니다<br>
+                지금은 상추별에서 청경채를 먹고있을거예요<br>
+            </p>
+        </div>
+    </main>
+    <footer style="color: grey;"><hr>copyright 어쩌구저쩌구</footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--사용자한테 문자를 입력받아서 팰린드롬인지 아닌지 출력해보기-->
+<!--팰린드롬: 토마토 기러기 오디오 역삼역 인도인 level-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>문자02</title>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var cnt=0
+        var inputUser = prompt("확인이 필요한 문자를 입력해보숑")
+        
+        for (i=0; i<=inputUser.length-1; i++) {
+            if (inputUser[i] == inputUser[inputUser.length-1-i]) {
+                cnt++;
+            } else {}
+        }
+        if (cnt == inputUser.length) {
+            alert("맞는듯")
+        } else {
+            alert("아닌듯")
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style></style>
+    <script></script>
+</head>
+<body>
+    <h2> Link Click Preventer</h2> <hr>
+
+    <a href="http://www.google.com">구글</a>
+    <a href="http://naver.com">네이버</a>
+
+    <script>
+        var links = document.getElementsByTagName('a');
+        for(var i=0; i<links.length; i++) {
+            links[i].addEventListener('click', function() {
+                var confirm = window.confirm("해당 링크로 이동하실?")
+                if(!confirm) {
+                    event.preventDefault(); //클릭차단해버리기
+                }
+            });
+        }
+    </script>
+</body>
+</html>

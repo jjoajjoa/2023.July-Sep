@@ -1,0 +1,40 @@
+<!--문자열 압축하기: 같은 문자가 연속되어 있을경우 해당 갯수를 같이 출력-->
+<!--aabcccdd -> a2b1c3d2-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>문제03</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h3>문자열 압축하기</h3>
+    같은 문자가 연속되어 있을경우 해당 갯수를 같이 출력 aabcccdd -> a2b1c3d2 <hr>
+
+    <script>
+        var cnt = 1;
+        var temp = "";
+        var inputUser = prompt("암거나 입력해보숑");
+
+        for (i=0; i<=inputUser.length-1; i++) {
+            
+            if (inputUser[i] == inputUser[i+1]) {
+                cnt += 1;
+                temp += inputUser[i]+cnt;    
+            } else {
+                i += 1;
+                cnt = 1;
+                cnt += 1;
+                temp += inputUser[i]+cnt;
+            }
+            
+              
+        }
+
+        document.write(inputUser+" -> "+temp);
+
+    </script>
+    
+</body>
+</html>

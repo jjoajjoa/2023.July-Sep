@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style></style>
+    <script></script>
+</head>
+<body>
+    <h3>마우스 Tracker</h3> <hr>
+
+    <p id="c">마우스 좌표: (x, y)</p>
+    <script>
+        var c = document.getElementById('c');
+        document.addEventListener('mousemove', function(event){
+            var x= event.clientX;
+            var y= event.clientY;
+            c.textContent = "마우스 좌표 : (" + x + ", " + y + ")";
+        });
+    </script>
+</body>
+</html>
